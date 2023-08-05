@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Roboto-regular";
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+*{
+    font-family: "Roboto-regular";
+    scroll-behavior: smooth;
+}
+/* Custom Utilities  */
+:root{
+    --first-color:#ff5714;
+    --second-color:#000000;
+    --third-color:#ffffff;
+    
+}
+
+body{
+    /* background: linear-gradient(to left,var(--first-color),var(--second-color)); */
+    overflow-x: hidden;
+}
