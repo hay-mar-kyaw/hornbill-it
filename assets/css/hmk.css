@@ -1,0 +1,322 @@
+/* Custom Utilities */
+.bgColor{
+    background: linear-gradient(to left,var(--first-color),var(--fourth-color)); 
+}
+.header{
+    font-family: "Lora-Bold";
+}
+.subHeader{
+    font-family: "OpenSans-Bold";
+}
+.color{
+    color:var(--first-color);
+}
+
+/* Header Icons  */
+#courses-icons .icons{
+    color:var(--first-color);
+}
+
+#courses .icons, #founder .icons,#about .icons{
+    width: 80px;
+    position: relative;
+
+}
+
+#about .arrow-line,#courses .arrow-line,#founder .arrow-line{
+    width: 60px;
+    height: 3px;
+    background-color: var(--first-color);
+    position: absolute;
+    top: 1px;
+}
+#about .arrow-icon,#courses .arrow-icon,#founder .arrow-icon{
+    width: 5.5px;
+    height: 5.5px;
+    background-color: var(--first-color);
+    transform: rotate(50deg);
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+/* Navbar section  */
+.navbar-background{
+    /* background: linear-gradient(to left,var(--first-color),var(--fourth-color)); */
+}
+.navbar{
+    /* background-color: var(--first-color); */
+    background: linear-gradient(to left,var(--first-color),var(--fourth-color));
+}
+#navbar .logo-img{
+    width: 100%;
+    height: 3rem;
+}
+.navbar-brand{
+    position: relative;
+}
+#navbar .logo-name-div{
+    position: absolute;
+    top: 10px;
+    left: 140px;
+}
+
+/* Hero Section  */
+.wave-container{
+    position: relative;
+    background:linear-gradient(to left,var(--first-color),var(--fourth-color));
+    /* overflow: hidden; */
+    /* background-color: var(--first-color); */
+    
+}
+
+/* Hero  Button Section  */
+#header .button {
+    padding: 10px;
+    border-radius: 1px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+  #header .button::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: var(--first-color);
+    transition: 0.5s ease-in-out 0.5s;
+    transform: scaleY(1);
+  }
+  #header .button:hover::before {
+    transform: scaleY(0);
+    /* color: var(--third-color); */
+  }
+  #header .button::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    width: calc(100% - 12px);
+    height: calc(100% + 4px);
+    background-color: var(--first-color);
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  #header .button:hover::after {
+    transform: scaleX(0);
+  }
+  #header .button span{
+    position: relative;
+    z-index: 3;
+  }
+/* End Hero Button Section  */
+
+/* Wave section  */
+  .waves   {
+    position: relative;
+    z-index: -1;
+  }
+   .wave {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/color2.jpg);
+    background-size: 2000px 100px;
+  }
+   .wave#wave1 {
+    z-index: 1;
+    opacity: 1;
+    bottom: 0;
+    animation: animatWave 8s linear infinite;
+  }
+   .wave#wave2 {
+    z-index: 2;
+    opacity: 0.7;
+    bottom: 0;
+    animation: animatWave-02 8s linear infinite;
+  }
+   .wave#wave3 {
+    z-index: 3;
+    opacity: 0.4;
+    bottom: 15px;
+    animation: animatWave-02 6s linear infinite;
+  }
+   .wave#wave4 {
+    z-index: 4;
+    opacity: 0.2;
+    bottom: 20px;
+    animation: animatWave-02 6s linear infinite;
+  }
+  @keyframes animatWave {
+    0% {
+      background-position-x: 2000px;
+    }
+  
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  @keyframes animatWave-02 {
+    0% {
+      background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-x: 2000px;
+    }
+  }
+/* //  */
+
+/* About Section  */
+#about .about-header{
+    font-size: 3rem;
+}
+#about .about-text-number{
+    color: var(--first-color);
+    font-size: 3rem;
+    text-align: center;
+}
+#about .about-right-wrapper{
+  position: relative;
+  top: 50px;
+  width: 400px;
+  height: 400px;
+
+}
+
+#about .about-right-wrapper img{
+  position: absolute;
+  top: -70px;
+  left: 10px;
+ 
+ }
+
+#about .about-sideBgImage-div{
+    width: 350px;
+    height: 330px;
+    background-color: var(--first-color);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    
+}
+
+/* Courses Section  */
+
+#courses .courses-cards{
+    background-color: var(--first-color);
+    position: relative;
+    height: 25rem ;
+    overflow: hidden;
+    
+    
+}
+#courses .courses-title{
+    
+    background-color: var(--first-color);
+    color: white;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    
+}
+#courses .courses-image-wrapper{
+  width: 100%;
+  height: 17rem;
+  overflow: hidden;
+}
+#courses img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#courses .card-text{
+    font-weight: bold;
+    font-family: "OpenSans-light";
+    font-size: 12px;
+}
+#courses .courses-cards:hover .courses-image1,
+#courses .courses-cards:hover .courses-image2,
+#courses .courses-cards:hover .courses-image3{
+    transform: scale(1.2);
+}
+
+/* Who is founder Section  */
+.founder-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.founder-imgbox{
+  background: url(../images/founder.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 20px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s;
+
+}
+@keyframes animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
+
+
+/* Courses Detail section  */
+#courses-detail .course-outline-button{
+    background-color: rgba(246, 82, 11,0.1);
+    box-shadow: 0px 2px 1px var(--first-color);
+}
+
+#courses-detail .card-text{
+    font-family: 'OpenSans-light';
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#courses-detail .courses-enroll-button{
+    background-color: rgba(246, 82, 11,0.1);
+    box-shadow: 0px 2px 1px var(--first-color);
+    font-size: 20px;
+}
+
+
+ .cap-text{
+    width: 120px;
+    height: 80px;
+    font-size: 40px;
+    background-color: var(--fourth-color);
+    clip-path: inset(5% 20% 15% 10%);
+    float:left;
+    font-family: 'OpenSans-light';
+    font-weight: bold;
+
+} 
+#courses-detail .detail-text{
+  font-family: 'OpenSans-light';
+  font-size: 14px;
+  line-height: 30px;
+
+} 
+  
+  
+  
+

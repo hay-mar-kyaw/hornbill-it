@@ -1,20 +1,31 @@
 @font-face {
-    font-family: "Roboto-regular";
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-family: "Lora-Bold";
+    src: url('../fonts/Lora/static/Lora-Bold.ttf');
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: "OpenSans-light";
+    src: url('../fonts/Open_Sans/static/OpenSans-Light.ttf');
 }
 *{
-    font-family: "Roboto-regular";
-    scroll-behavior: smooth;
+    font-family: "OpenSans-Bold";
+    
 }
 /* Custom Utilities  */
 :root{
-    --first-color:#ff5714;
+    --first-color:#f6520b;
     --second-color:#000000;
     --third-color:#ffffff;
+    --fourth-color:#ced4da;
     
 }
 
+
 body{
+    background-color: var(--third-color);
     /* background: linear-gradient(to left,var(--first-color),var(--second-color)); */
     overflow-x: hidden;
 }
