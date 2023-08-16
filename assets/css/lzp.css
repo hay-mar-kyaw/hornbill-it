@@ -485,3 +485,11 @@
   width: 50%;
   transform: translateX(-100%);
 }
+
+#courses input[type="text"],
+textarea {
+  background-color: rgba(236, 233, 233, 0.719);
+}
+#courses .search a {
+  background-color: rgba(236, 233, 233, 0.719);
+}
