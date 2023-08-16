@@ -53,7 +53,7 @@
   max-height: 0;
   overflow: hidden;
   color: var(--fourth-color);
-  transition: 0.5s;
+  transition: 0.4s;
   padding: 0 0 0 40px;
 }
 #why-choose-us .accordion-item:hover .accordion-body {
