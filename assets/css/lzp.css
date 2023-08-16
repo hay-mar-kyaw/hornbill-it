@@ -1,0 +1,487 @@
+/* Custom Utilities  */
+:root {
+  --first-color: #f6520b;
+  --second-color: #000000;
+  --third-color: #ffffff;
+  --fourth-color: #a3a6ab;
+}
+@font-face {
+  font-family: "OpenSans-light";
+  src: url("../fonts/Open_Sans/static/OpenSans-Light.ttf");
+}
+.icons,
+.icons,
+.icons {
+  width: 70px;
+  position: relative;
+}
+
+.arrow-line,
+.arrow-line,
+.arrow-line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--first-color);
+  position: absolute;
+  top: 3px;
+}
+.arrow-icon,
+.arrow-icon,
+.arrow-icon {
+  width: 5.5px;
+  height: 5.5px;
+  background-color: var(--first-color);
+  transform: rotate(50deg);
+  position: absolute;
+  top: 1.5px;
+  left: 60px;
+}
+
+/************************** WHY CHOOSE US **************************/
+#why-choose-us .accordion-item {
+  border: 1px solid var(--first-color);
+}
+#why-choose-us .accordion-button:not(.collapsed) {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+#why-choose-us .accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+#why-choose-us .accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  color: var(--fourth-color);
+  transition: all 0.4s ease;
+  padding: 0 0 0 40px;
+}
+#why-choose-us .accordion-item:hover .accordion-body {
+  max-height: 600px;
+  padding: 0 0 15px 40px;
+}
+#why-choose-us .accordion-button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#why-choose-us .accordion-button i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: var(--first-color);
+}
+#why-choose-us .accordion-button:not(.collapsed)::after {
+  content: "";
+  background-image: none;
+}
+#why-choose-us .images {
+  max-height: 400px;
+  object-fit: contain;
+}
+#why-choose-us .back-img {
+  position: relative;
+  z-index: 1;
+}
+#why-choose-us .back-img::before {
+  content: "";
+  width: 60%;
+  height: 90%;
+  background-color: var(--first-color);
+  position: absolute;
+  bottom: 0px;
+  left: 120px;
+  z-index: -1;
+}
+
+/*************************** Quick Answer ***************************/
+#quick-answer .accordion {
+  --bs-accordion-border-color: none;
+}
+#quick-answer .accordion-body {
+  color: var(--fourth-color);
+}
+#quick-answer .accordion-button {
+  border: 1px solid var(--first-color);
+}
+#quick-answer .accordion-button:not(.collapse) {
+  background-color: none;
+}
+#quick-answer .accordion-button:focus {
+  border: 1px solid var(--first-color);
+  box-shadow: none;
+}
+#quick-answer .accordion-button:not(.collapsed) {
+  background-color: var(--third-color);
+}
+#quick-answer .accordion-button::after {
+  content: "";
+  color: var(--first-color);
+}
+
+/*************************** Testimonial Section ***************************/
+#testimonial .carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#testimonial .carousel-item {
+  position: relative;
+}
+#testimonial .card {
+  max-width: 500px;
+  margin: auto;
+}
+#testimonial .client-msg {
+  background-color: var(--third-color);
+  border-radius: 7px;
+  text-align: left;
+  position: relative;
+  background-color: var(--first-color);
+}
+#testimonial .client-data img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50px;
+  object-fit: cover;
+  border: 5px solid var(--third-color);
+  position: relative;
+  bottom: 10px;
+  left: 0px;
+}
+#testimonial .carousel-control-prev-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/chevron-left.svg);
+}
+#testimonial .carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+#testimonial .carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/chevron-right.svg);
+}
+#testimonial .carousel-indicators button[type="button"] {
+  width: 10px;
+  height: 10px;
+  margin: 40px 5px 0 5px;
+  border-radius: 50%;
+}
+#testimonial .carousel-indicators .active {
+  transform: scale(1.4);
+  background-color: var(--first-color);
+}
+#testimonial .carousel-indicators [data-bs-target] {
+  background-color: var(--first-color);
+}
+#testimonial .client-msg p::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  left: 8rem;
+  bottom: -8px;
+  transform: skewY(-35deg);
+  background-color: var(--first-color);
+}
+
+/*************************** Contact Section ***************************/
+#contact .sub-title {
+  color: var(--first-color);
+}
+#contact .skills li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+}
+#contact .button {
+  padding: 10px;
+  border-radius: 1px;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+  text-decoration: none;
+  position: relative;
+}
+#contact .button::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color: var(--third-color);
+  transition: 0.5s ease-in-out 0.5s;
+  transform: scaleY(1);
+}
+#contact .button:hover::before {
+  transform: scaleY(0);
+}
+#contact .button::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  width: calc(100% - 12px);
+  height: calc(100% + 4px);
+  background-color: var(--third-color);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+#contact .button:hover::after {
+  transform: scaleX(0);
+}
+
+#contact .button span {
+  position: relative;
+  z-index: 3;
+}
+#contact form input {
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+  font-weight: 500;
+  border-bottom: 1px solid var(--first-color);
+}
+.form-control::placeholder {
+  color: var(--fourth-color);
+  opacity: 0.6;
+}
+#contact form input:focus {
+  box-shadow: none;
+}
+#contact .btn-danger {
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+#contact .btn-outline-danger {
+  color: var(--first-color);
+  border-color: var(--first-color);
+}
+#contact .btn-outline-danger:hover {
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+#contact .btn-danger:hover {
+  color: var(--third-color);
+  background-color: #f14a07;
+}
+#contact .address i {
+  color: var(--first-color);
+}
+#contact .address a {
+  color: var(--second-color);
+  font-weight: 500;
+}
+#contact .socials a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--fourth-color);
+  transition: 0.5s;
+}
+#contact .socials a:hover {
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+
+/*************************** FOOTER SECTION ***************************/
+#footer {
+  background-color: var(--first-color);
+  color: var(--third-color);
+  margin-top: 90px;
+  position: relative;
+}
+#footer img {
+  width: 100px;
+}
+#footer ul li {
+  padding: 5px 0;
+}
+#footer i {
+  font-size: 15px;
+}
+#footer li a {
+  color: var(--third-color);
+  transition: 0.5s;
+}
+#footer .resources {
+  padding-left: 400px;
+}
+#footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wave.jpg);
+  background-size: 1000px 100px;
+}
+#footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatWave 4s linear infinite;
+}
+#footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 0;
+  animation: animatWave-02 4s linear infinite;
+}
+#footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.6;
+  bottom: 15px;
+  animation: animatWave-02 3s linear infinite;
+}
+#footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.9;
+  bottom: 20px;
+  animation: animatWave-02 3s linear infinite;
+}
+@keyframes animatWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes animatWave-02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Courses  section  */
+#courses .course-outline-button {
+  background-color: rgba(246, 82, 11, 0.1);
+  box-shadow: 0px 2px 1px var(--first-color);
+}
+
+#courses .card-text {
+  font-family: "OpenSans-light";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#courses .courses-enroll-button {
+  background-color: rgba(246, 82, 11, 0.1);
+  box-shadow: 0px 2px 1px var(--first-color);
+  font-size: 20px;
+}
+
+.cap-text {
+  width: 120px;
+  height: 80px;
+  font-size: 40px;
+  background-color: var(--fourth-color);
+  clip-path: inset(5% 20% 15% 10%);
+  float: left;
+  font-family: "OpenSans-light";
+  font-weight: bold;
+}
+#courses .detail-text {
+  font-family: "OpenSans-light";
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* Courses Sections  */
+
+#courses .courses-cards {
+  background-color: var(--first-color);
+  position: relative;
+  overflow: hidden;
+}
+#courses .courses-title {
+  background-color: var(--first-color);
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#courses .courses-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+#courses img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+#courses .card-text {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "OpenSans-light";
+}
+#courses .courses-cards:hover .courses-image1,
+#courses .courses-cards:hover .courses-image2,
+#courses .courses-cards:hover .courses-image3 {
+  transform: scale(1.2);
+}
+
+/************************* Navbar Effect ***************************/
+#navbar ul li a {
+  padding: 8px 8px 0px 8px;
+}
+#navbar ul li a {
+  color: var(--second-color);
+  position: relative;
+}
+#navbar ul li a::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  width: 0px;
+  height: 2px;
+  background-color: var(--first-color);
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+#navbar ul li a::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  right: 0;
+
+  width: 0px;
+  height: 2px;
+  background-color: var(--second-color);
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+#navbar ul li:hover a::before {
+  width: 50%;
+  transform: translateX(100%);
+}
+#navbar ul li:hover a::after {
+  width: 50%;
+  transform: translateX(-100%);
+}
