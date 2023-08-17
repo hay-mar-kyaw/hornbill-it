@@ -10,27 +10,113 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.4.2/css/all.min.css">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/lzp.css" />
+    <link rel="stylesheet" href="assets/css/hmk.css">
   </head>
   <body>
-    
-    <!-- Navbar Section  -->
-    <nav id="navbar"></nav>
-    <!-- Hero Section  -->
-    <header id="header">
-      <div class="container" >
-        
-      </div>
-    </header>
     <main class="overflow-hidden">
       <!-- Navbar Section  -->
-      <nav id="navbar"></nav>
+      <nav id="navbar" class="navbar navbar-expand-lg ">
+        <div class="container d-flex py-4">
+          <a class="navbar-brand d-lg-flex w-25" href="#">
+              <img src="assets/images/logo.png" class="img-fluid  me-1" style="height: auto; width: 8rem;" alt="">
+              <div class="brand-text d-flex flex-column py-2" style="line-height: 25px;">
+                  <span>HORNBILL</span>
+                  <span class="text-light fs-6">Information Technology</span>
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3">
+                  <a class="nav-link text-light  active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link text-light" href="#">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link text-light" href="#">Courses</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link text-light" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <!-- Hero Section  -->
-      <header id="header">
-        <div class="container"></div>
+      <header id="header">      
+        <div class="wave-container pt-5">
+              <div class="row mt-5" style="min-height: 30vh;">
+                  <div class="col-md-7">
+                    <img src="assets/images/heroImg.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-3 mt-5 p-4">
+                    <h1 class="header text-light mb-2">
+                      Discover Your Future at <a href="" class="header text-dark text-decoration-none">HIT</a>
+                    </h1>
+                    <p class="subHeader text-light mb-4">
+                      Let our experts prepare a free home analysis for you! Just fill out our form.Surround yourself with the luxury and quality of one of.
+                    </p>
+                    <a href="#" class="button"><span>ENROLLED NOW</span> </a>
+                    
+                    <!-- <button class="btn btn-outline-light rounded-0 p-3">
+                      ENROLLED NOW
+                    </button> -->
+                </div>
+              </div>
+               
+        </div> 
+        
+              
       </header>
+
+      <!-- Wave Animation Section  -->
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+      <!-- Icon Section  -->
+    <section id="courses-icons" class="my-5 py-5" style="position:relative; top:70px">
+      <div class="container d-flex justify-content-center">
+          <div class="row text-center" style="width: 800px;">
+              <div class="col-md-4 border border-3 border-top-0 border-bottom-0 border-start-0 border-end-3">
+                  
+                    <div class="mb-2"><i class="fa-solid fa-user-graduate fa-5x  icons" ></i></div>
+                    <div id="student-countdown">35000</div>
+                    <div>STUDENTS ENROLLED</div>
+                  
+              </div>
+              <div class="col-md-4 border border-3 border-top-0 border-bottom-0 border-start-0 border-end-3">
+                
+                  <div class="mb-2"><i class="fa-solid fa-user-graduate fa-5x  icons" ></i></div>
+                  <div>35000</div>
+                  <div>STUDENTS ENROLLED</div>
+                
+              </div>
+              <div class="col-md-4">
+                
+                  <div class="mb-2"><i class="fa-solid fa-user-graduate fa-5x  icons" ></i></div>
+                  <div>35000</div>
+                  <div>STUDENTS ENROLLED</div>
+                
+              </div>
+          </div>
+        </div>
+    </section> 
 
       <!-- About Section  -->
       <section id="about" class="py-5">
@@ -305,17 +391,116 @@
       </section>
 
       <!-- Courses Section  -->
-      <section id="courses">
-        <div class="container"></div>
+      <section id="courses" class="my-5 py-5">
+        <div class="container">
+          <!-- Header Icons  -->
+          <div class="courses-header d-flex justify-content-center align-items-center ">
+            <div class="icons input-group ">
+              <div class="arrow-line"></div>
+              <div class="arrow-icon"></div>
+            </div>
+            <h6 class="header pt-3 ">Courses</h6>
+          </div>
+          <!-- //  -->
+                
+          <h1 class="header mb-5 text-center"><p class="d-inline color header">HIT's</p> Premium Courses</h1>
+          <div class="row  gy-5 py-5">
+            <div class="col-md-6 col-lg-4">
+              <a href="courses_detail.html" class="card border-0 rounded-0 courses-cards text-decoration-none text-light" >
+                
+                <div class="courses-image-wrapper">
+                  <img src="assets/images/courses.jpg" class="card-img-top courses-image2"  alt="...">
+                </div>
+                <!-- badge  -->
+                <div class="badge courses-title text-center rounded-pill px-4 py-3 fs-6">FULLSTACK</div>
+                <!-- //  -->
+                <div class="card-body py-4 px-4">
+                  <h5 class="card-title mb-3">Figma</h5>
+                  <div class="card-text">Chapter-12 Lesson-50</div>
+                  <div class="card-title">Fees : 50000 Ks</div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+              <a href="courses_detail.html" class="card border-0 rounded-0 courses-cards text-decoration-none text-light" >
+                
+                <div class="courses-image-wrapper">
+                  <img src="assets/images/courses.jpg" class="card-img-top courses-image2"  alt="...">
+                </div>
+                <!-- badge  -->
+                <div class="badge courses-title text-center rounded-pill px-4 py-3 fs-6">FULLSTACK</div>
+                <!-- //  -->
+                <div class="card-body py-4 px-4">
+                  <h5 class="card-title mb-3">Bootcamp with OJT</h5>
+                  <div class="card-text">Chapter-12 Lesson-50</div>
+                  <div class="card-title">Fees : 1500000 Ks</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a href="courses_detail.html" class="card border-0 rounded-0 courses-cards text-decoration-none text-light" >
+                
+                <div class="courses-image-wrapper">
+                  <img src="assets/images/courses.jpg" class="card-img-top courses-image3"  alt="...">
+                </div>
+                <!-- badge  -->
+                <div class="badge courses-title text-center rounded-pill px-4 py-3 fs-6">WEB DEVELOPMENT</div>
+                <!-- //  -->
+                <div class="card-body py-4 px-4">
+                  <h5 class="card-title mb-3">PHP + Laravel</h5>
+                  <div class="card-text">Chapter-12 Lesson-50</div>
+                  <div class="card-title">Fees : 200000 Ks</div>
+                </div>
+              </a>
+            </div>
+            
+          
+          </div>
+            
+          </div>
+        </div>
       </section>
 
       <!-- Who is Founder Section  -->
-      <section id="founder">
-        <div class="container"></div>
+      <section id="founder" class="my-5 py-5">
+        <div class="container">
+          <!-- Header Icon  -->
+          <div class="courses-header d-flex justify-content-center align-items-center ">
+            <div class="icons input-group ">
+              <div class="arrow-line"></div>
+              <div class="arrow-icon"></div>
+            </div>
+            <h6 class="header pt-3 ">Our Founder</h6>
+          </div>
+          <!-- //  -->
+          
+          <h1 class="header mb-5 text-center">Founder & CEO Of <p class="d-inline color header">HIT</p></h1>
+          <div class="row py-5 gy-5 gx-md-5 justify-content-center align-items-center">
+                <div class="col-lg-5">
+                   <div class="founder-wrapper">
+                      <div class="founder-imgbox">
+                      </div>
+                      
+                   </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="header">Ye Myint Soe</h5>
+                  <h1 class="header mb-5">Founder & CEO</h1>
+                  <p class="mb-5 text-secondary" style="font-family: 'OpenSans-light';">Let our experts prepare a free home analysis for you! Just fill out our form. Surround yourself with the luxury and quality of one of Saskatoon's premier home builder. At Properties we take pride in building you everything you need to call The Meadows home.</p>
+                  <ul class="list-unstyled d-flex text-center">
+                    <li><a href="" class="text-decoration-none"><i class="fa-brands fa-facebook fa-3x text-primary"></i></a></li>
+                    <li class="bg-danger py-2 mx-3" style="width: 50px; height: 50px; border-radius: 50%; line-height: 50px;"><a href="" class="text-decoration-none text-center "><i class="fa-brands fa-youtube fa-2x text-white"></i></a></li>
+                    <li><a href="" class="text-decoration-none " ><i class="fa-brands fa-github fa-3x text-dark"></i></a></li>
+                  </ul>
+                </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Why Choose us Section  -->
-      <section id="why-choose-us" class="py-5">
+      <!-- Why Choose HIT -->
+      <section id="why-choose-us" class="my-5 py-5">
         <div class="container">
           <div
             class="courses-header d-flex justify-content-center align-items-center"
@@ -586,135 +771,8 @@
         </div>
       </section>
 
-      <!-- Students Testimonial Section  -->
-      <section id="testimonial" class="py-5">
-        <div class="container p-md-5">
-          <div
-            class="courses-header d-flex justify-content-center align-items-center"
-          >
-            <div class="icons input-group">
-              <div class="arrow-line"></div>
-              <div class="arrow-icon"></div>
-            </div>
-            <h6 class="header pt-3">Testimonials</h6>
-          </div>
-          <h2 class="text-center pb-5">Our Student's Reviews</h2>
-
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide m-auto pt-5"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="m-auto">
-                  <div class="card border-0 overflow-hidden">
-                    <div class="client-msg">
-                      <p class="p-5 p-sm-5 fs-5 text-center text-light">
-                        <i class="bi bi-quote fs-1"></i>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Facilis animi repudiandae neque. Perferendis
-                        facere quaerat et natus ad placeat rem, autem corporis
-                        suscipit iure, eum eaque nobis tempora voluptas quas.
-                        Lorem ipsum dolor sit amet.
-                      </p>
-                    </div>
-                    <div class="client-data">
-                      <img src="./assets/images/girl1.jpg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="m-auto">
-                  <div class="card border-0 overflow-hidden">
-                    <div class="client-msg">
-                      <p class="p-5 p-sm-5 fs-5 text-center text-light">
-                        <i class="bi bi-quote fs-1"></i>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Facilis animi repudiandae neque. Perferendis
-                        facere quaerat et natus ad placeat rem, autem corporis
-                        suscipit iure, eum eaque nobis tempora voluptas quas.
-                        Lorem ipsum dolor sit amet.
-                      </p>
-                    </div>
-                    <div class="client-data">
-                      <img src="./assets/images/boy1.jpg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-aos="fade-left">
-                <div class="m-auto" data-aos="fade-right">
-                  <div class="card border-0 overflow-hidden">
-                    <div class="client-msg">
-                      <p class="p-5 p-sm-5 fs-5 text-center text-light">
-                        <i class="bi bi-quote fs-1"></i>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Facilis animi repudiandae neque. Perferendis
-                        facere quaerat et natus ad placeat rem, autem corporis
-                        suscipit iure, eum eaque nobis tempora voluptas quas.
-                        Lorem ipsum dolor sit amet.
-                      </p>
-                    </div>
-                    <div class="client-data">
-                      <img src="./assets/images/boy2.jpg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-buttons">
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- FAQ Section  -->
-      <section id="quick-answer" class="py-5">
+      <section id="quick-answer" class="my-5 py-5">
         <div class="container h-100">
           <div
             class="courses-header d-flex justify-content-center align-items-center"
@@ -860,6 +918,133 @@
         </div>
       </section>
 
+      <!-- Students Testimonial Section  -->
+      <section id="testimonial" class="my-5 py-5">
+        <div class="container p-md-5">
+          <div
+            class="courses-header d-flex justify-content-center align-items-center"
+          >
+            <div class="icons input-group">
+              <div class="arrow-line"></div>
+              <div class="arrow-icon"></div>
+            </div>
+            <h6 class="header pt-3">Testimonials</h6>
+          </div>
+          <h2 class="text-center pb-5">Our Student's Reviews</h2>
+
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide m-auto pt-5"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="m-auto">
+                  <div class="card border-0 overflow-hidden">
+                    <div class="client-msg">
+                      <p class="p-5 p-sm-5 fs-5 text-center text-light">
+                        <i class="bi bi-quote fs-1"></i>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis animi repudiandae neque. Perferendis
+                        facere quaerat et natus ad placeat rem, autem corporis
+                        suscipit iure, eum eaque nobis tempora voluptas quas.
+                        Lorem ipsum dolor sit amet.
+                      </p>
+                    </div>
+                    <div class="client-data">
+                      <img src="./assets/images/girl1.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-auto">
+                  <div class="card border-0 overflow-hidden">
+                    <div class="client-msg">
+                      <p class="p-5 p-sm-5 fs-5 text-center text-light">
+                        <i class="bi bi-quote fs-1"></i>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis animi repudiandae neque. Perferendis
+                        facere quaerat et natus ad placeat rem, autem corporis
+                        suscipit iure, eum eaque nobis tempora voluptas quas.
+                        Lorem ipsum dolor sit amet.
+                      </p>
+                    </div>
+                    <div class="client-data">
+                      <img src="./assets/images/boy1.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-aos="fade-left">
+                <div class="m-auto" data-aos="fade-right">
+                  <div class="card border-0 overflow-hidden">
+                    <div class="client-msg">
+                      <p class="p-5 p-sm-5 fs-5 text-center text-light">
+                        <i class="bi bi-quote fs-1"></i>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Facilis animi repudiandae neque. Perferendis
+                        facere quaerat et natus ad placeat rem, autem corporis
+                        suscipit iure, eum eaque nobis tempora voluptas quas.
+                        Lorem ipsum dolor sit amet.
+                      </p>
+                    </div>
+                    <div class="client-data">
+                      <img src="./assets/images/boy2.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-buttons">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Section  -->
       <section id="contact" class="pt-5">
         <div class="container py-5">
@@ -937,13 +1122,14 @@
       </section>
 
       <!-- Footer Section  -->
-      <footer id="footer" class="py-5">
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
+      <div class="footerwaves ">
+        <div class="footerwave" id="footerwave1"></div>
+        <div class="footerwave" id="footerwave2"></div>
+        <div class="footerwave" id="footerwave3"></div>
+        <div class="footerwave" id="footerwave4"></div>
+      </div>
+      <footer id="footer" class="py-5 text-center">
+        
         <div class="container">
           <div class="row g-5 pb-4">
             <div class="col-md-6">
@@ -1010,5 +1196,6 @@
       </footer>
     </main>
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/icons/fontawesome-free-6.4.2/js/all.min.js"></script>
   </body>
 </html>
