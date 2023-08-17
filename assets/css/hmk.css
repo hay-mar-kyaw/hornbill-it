@@ -13,32 +13,10 @@
 }
 
 /* Header Icons  */
-/* #courses-icons .icons{
+ #courses-icons .icons{
     color:var(--first-color);
 }
 
-#courses .icons, #founder .icons,#about .icons{
-    width: 80px;
-    position: relative;
-
-}
-
-#about .arrow-line,#courses .arrow-line,#founder .arrow-line{
-    width: 60px;
-    height: 3px;
-    background-color: var(--first-color);
-    position: absolute;
-    top: 1px;
-}
-#about .arrow-icon,#courses .arrow-icon,#founder .arrow-icon{
-    width: 5.5px;
-    height: 5.5px;
-    background-color: var(--first-color);
-    transform: rotate(50deg);
-    position: absolute;
-    top: 0;
-    left: 60px;
-} */
 
 /* Navbar section  */
 .navbar-background{
@@ -171,96 +149,6 @@
       background-position-x: 2000px;
     }
   }
-/* //  */
-/* Why Choose Us  */
-#why-choose-us .accordion-item {
-  border: 1px solid var(--first-color);
-}
-#why-choose-us .accordion-button:not(.collapsed) {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-#why-choose-us .accordion-item:first-of-type .accordion-button {
-  border-radius: 0;
-}
-#why-choose-us .accordion-body {
-  max-height: 0;
-  overflow: hidden;
-  color: var(--fourth-color);
-  transition: 0.4s;
-  padding: 0 0 0 40px;
-}
-#why-choose-us .accordion-item:hover .accordion-body {
-  max-height: 600px;
-  padding: 0 0 15px 40px;
-}
-#why-choose-us .accordion-button {
-  cursor: pointer;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-#why-choose-us .accordion-button i {
-  margin-right: 10px;
-  font-size: 1.3rem;
-  color: var(--first-color);
-}
-#why-choose-us .accordion-button:not(.collapsed)::after {
-  content: "";
-  background-image: none;
-}
-#why-choose-us .images {
-  max-height: 400px;
-  object-fit: contain;
-  z-index: 3;
-}
-#why-choose-us .back-img {
-  position: relative;
-  z-index: 1;
-}
-#why-choose-us .back-img::before {
-  content: "";
-  width: 67%;
-  height: 90%;
-  background: url(../images/bg.png);
-  position: absolute;
-  bottom: 0px;
-  left: 110px;
-  overflow: hidden;
-  z-index: -1;
-}
-#why-choose-us .shape {
-  position: absolute;
-  width: 50%;
-  left: 8rem;
-  top: 30px;
-  z-index: -1;
-}
-#why-choose-us .shape1 {
-  position: absolute;
-  width: 50%;
-  left: 11rem;
-  top: 9rem;
-  z-index: -1;
-}
-#why-choose-us .shape2 {
-  position: absolute;
-  width: 50%;
-  left: 12rem;
-  top: 15em;
-  z-index: -1;
-}
-#why-choose-us .line {
-  width: 50%;
-  left: 12rem;
-  top: 15em;
-  z-index: -1;
-}
-#why-choose-us .square {
-  position: absolute;
-  bottom: 0;
-}
 
 
 /* About Section  */
@@ -273,10 +161,16 @@
     text-align: center;
 }
 /* About Right Side */
+/* #about .images {
+  max-height: 400px;
+  object-fit: contain;
+  z-index: 3;
+}
 #about .back-img {
   position: relative;
   z-index: 1;
 }
+
 #about .back-img::before {
   content: "";
   width: 67%;
@@ -311,14 +205,14 @@
 }
 #about .line {
   width: 50%;
-  left: 12rem;
-  top: 15em;
+  left: -1.2rem;
+  top: 4rem;
   z-index: -1;
 }
 #about .square {
   position: absolute;
   bottom: 0;
-}
+} */
 
 /* Courses Section  */
 
@@ -393,46 +287,27 @@
   }
 }
 
-
-
-
-
-/* Courses Detail section  */
-#courses-detail .course-outline-button{
-    background-color: rgba(246, 82, 11,0.1);
-    box-shadow: 0px 2px 1px var(--first-color);
+#founder .socials a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  /* color: var(--fourth-color); */
+  transition: 0.5s;
 }
-
-#courses-detail .card-text{
-    font-family: 'OpenSans-light';
-    font-weight: bold;
-    font-size: 12px;
-}
-
-#courses-detail .courses-enroll-button{
-    background-color: rgba(246, 82, 11,0.1);
-    box-shadow: 0px 2px 1px var(--first-color);
-    font-size: 20px;
+#founder .socials a:hover {
+  color: var(--third-color);
+  background-color: var(--first-color);
 }
 
 
- .cap-text{
-    width: 120px;
-    height: 80px;
-    font-size: 40px;
-    background-color: var(--fourth-color);
-    clip-path: inset(5% 20% 15% 10%);
-    float:left;
-    font-family: 'OpenSans-light';
-    font-weight: bold;
 
-} 
-#courses-detail .detail-text{
-  font-family: 'OpenSans-light';
-  font-size: 14px;
-  line-height: 30px;
 
-} 
+
+
+
   
   
   

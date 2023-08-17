@@ -36,7 +36,6 @@ body{
 
 #courses .icons,
 #founder .icons,
-#about .icons,
 #why-choose-us .icons,
 #quick-answer .icons,
 #testimonial .icons,
@@ -47,7 +46,7 @@ body{
 
 }
 
-#about .arrow-line,
+
 #courses .arrow-line,
 #founder .arrow-line,
 #why-choose-us .arrow-line,
@@ -61,7 +60,7 @@ body{
     position: absolute;
     top: 3px;
 }
-#about .arrow-icon,
+
 #courses .arrow-icon,
 #founder .arrow-icon,
 #why-choose-us .arrow-icon,
@@ -76,4 +75,45 @@ body{
     position: absolute;
     top: 1.5px;
     left: 60px;
+}
+
+#about .icons{
+    width: 70px;
+    position: relative;
+}
+#about .arrow-line{
+    width: 60px;
+    height: 2px;
+    background-color: var(--first-color);
+    position: absolute;
+    top: -2px;
+}
+#about .arrow-icon{
+    width: 5.5px;
+    height: 5.5px;
+    background-color: var(--first-color);
+    transform: rotate(50deg);
+    position: absolute;
+    top: -3px;
+    left: 60px;
+}
+
+/* Up Arrow Section  */
+.up-arrow{
+    display: block;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 4px;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+
+}
+.up-arrow:hover{
+    color: var(--first-color);
 }
