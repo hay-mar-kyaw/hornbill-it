@@ -172,6 +172,96 @@
     }
   }
 /* //  */
+/* Why Choose Us  */
+#why-choose-us .accordion-item {
+  border: 1px solid var(--first-color);
+}
+#why-choose-us .accordion-button:not(.collapsed) {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+#why-choose-us .accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+#why-choose-us .accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  color: var(--fourth-color);
+  transition: 0.4s;
+  padding: 0 0 0 40px;
+}
+#why-choose-us .accordion-item:hover .accordion-body {
+  max-height: 600px;
+  padding: 0 0 15px 40px;
+}
+#why-choose-us .accordion-button {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#why-choose-us .accordion-button i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: var(--first-color);
+}
+#why-choose-us .accordion-button:not(.collapsed)::after {
+  content: "";
+  background-image: none;
+}
+#why-choose-us .images {
+  max-height: 400px;
+  object-fit: contain;
+  z-index: 3;
+}
+#why-choose-us .back-img {
+  position: relative;
+  z-index: 1;
+}
+#why-choose-us .back-img::before {
+  content: "";
+  width: 67%;
+  height: 90%;
+  background: url(../images/bg.png);
+  position: absolute;
+  bottom: 0px;
+  left: 110px;
+  overflow: hidden;
+  z-index: -1;
+}
+#why-choose-us .shape {
+  position: absolute;
+  width: 50%;
+  left: 8rem;
+  top: 30px;
+  z-index: -1;
+}
+#why-choose-us .shape1 {
+  position: absolute;
+  width: 50%;
+  left: 11rem;
+  top: 9rem;
+  z-index: -1;
+}
+#why-choose-us .shape2 {
+  position: absolute;
+  width: 50%;
+  left: 12rem;
+  top: 15em;
+  z-index: -1;
+}
+#why-choose-us .line {
+  width: 50%;
+  left: 12rem;
+  top: 15em;
+  z-index: -1;
+}
+#why-choose-us .square {
+  position: absolute;
+  bottom: 0;
+}
+
 
 /* About Section  */
 #about .about-header{
@@ -183,53 +273,51 @@
     text-align: center;
 }
 /* About Right Side */
-#about .about-rightSide-wrapper{
-    border: 1px solid;
-    
-}
-
-#about .bg-shap{
-  border: 1px solid red;
-  /* min-width: 500px; */
+#about .back-img {
   position: relative;
-  /* top: 50px; */
-
-  
-
+  z-index: 1;
 }
-
-#about .bg-shap .shap0{
-  position: absolute;
-  top: 70px;
-  right:335px;
-}
-
-#about .bg-shap .shap1{
-  position: absolute;
-  top: 30px;
-  right:100px;
-}
-#about .bg-shap .shap2{
-  position: absolute;
-  top:120px;
-  right: 40px;
-}
-#about .bg-shap  .shap3{
-  position: absolute;
-  bottom: 90px;
-  right: -10px;
-}
-#about .bg-shap  .shap4{
+#about .back-img::before {
+  content: "";
+  width: 67%;
+  height: 90%;
+  background: url(../images/bg.png);
   position: absolute;
   bottom: 0px;
-  right: 30px;
-  
+  left: 110px;
+  overflow: hidden;
+  z-index: -1;
 }
-#about .bg-shap img{
-  min-height: 400px;
+#about .shape {
   position: absolute;
+  width: 50%;
+  left: 8rem;
   top: 30px;
-  left:-50px;
+  z-index: -1;
+}
+#about .shape1 {
+  position: absolute;
+  width: 50%;
+  left: 11rem;
+  top: 9rem;
+  z-index: -1;
+}
+#about .shape2 {
+  position: absolute;
+  width: 50%;
+  left: 12rem;
+  top: 15em;
+  z-index: -1;
+}
+#about .line {
+  width: 50%;
+  left: 12rem;
+  top: 15em;
+  z-index: -1;
+}
+#about .square {
+  position: absolute;
+  bottom: 0;
 }
 
 /* Courses Section  */
