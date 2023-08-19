@@ -17,11 +17,13 @@
     color:var(--first-color);
 }
 
-
+/* Main header  */
+/* .main-header{
+  height: 85vh;
+  background-color: var(--first-color);
+} */
 /* Navbar section  */
-.navbar-background{
-    /* background: linear-gradient(to left,var(--first-color),var(--fourth-color)); */
-}
+
 .navbar{
     background-color: var(--first-color);
     /* background: linear-gradient(to left,var(--first-color),var(--fourth-color)); */
@@ -40,7 +42,8 @@
 }
 
 /* Hero Section  */
-.wave-container{
+#header .wave-container{
+    height:72vh ;
     position: relative;
     background-color: var(--first-color);
     /* background:linear-gradient(to left,var(--first-color),var(--fourth-color)); */
@@ -336,6 +339,15 @@
 #founder .fa-youtube{
   background-color: #bb0000;
   color: white;
+}
+
+
+/* Media Query */
+@media (max-width:600px)
+{
+  #header .wave-container{
+    height:100vh ;
+}
 }
 
 
