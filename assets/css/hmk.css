@@ -224,6 +224,9 @@
     
     
 }
+#courses .card:hover{
+  opacity: 0.8;
+}
 #courses .courses-title{
     
     background-color: var(--first-color);
@@ -241,12 +244,21 @@
 #courses img{
     width: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.7s;
+}
+#courses .card-body h5{
+  font-family: "OpenSans-bold";
+  font-weight: 100px;
 }
 #courses .card-text{
     font-weight: bold;
     font-family: "OpenSans-light";
     font-size: 12px;
+}
+#courses .fee{
+  font-family: 'OpenSans-light';
+  font-weight: bold;
+  font-size: 15px;
 }
 #courses .courses-cards:hover .courses-image1,
 #courses .courses-cards:hover .courses-image2,
@@ -287,20 +299,45 @@
   }
 }
 
-#founder .socials a {
-  display: block;
+
+#founder .social-icons{
+  padding:10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+#founder .social-icon{
+  padding:3px;
   width: 50px;
   height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
   text-align: center;
-  /* color: var(--fourth-color); */
-  transition: 0.5s;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease;
+   
 }
-#founder .socials a:hover {
-  color: var(--third-color);
-  background-color: var(--first-color);
+#founder .social-icons:hover{
+  /* opacity: 0.7; */
+  transform: translateY(-10px);
 }
+#founder .social-icon:hover{
+  /* opacity: 0.7; */
+  transform: translateY(-10px);
+}
+
+#founder .fa-facebook-f{
+  background-color: #3B5998;
+  color: #fff;
+}
+#founder .fa-youtube{
+  background-color: #bb0000;
+  color: white;
+}
+
 
 
 

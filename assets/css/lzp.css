@@ -136,6 +136,7 @@
   position: relative;
   z-index: 1;
 }
+  
 #about .back-img::before {
   content: "";
   width: 67%;
@@ -147,6 +148,7 @@
   overflow: hidden;
   z-index: -1;
 }
+
 #about .shape {
   position: absolute;
   width: 50%;
@@ -519,19 +521,47 @@
 #courses-page img {
   width: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.7s;
 }
-#courses-page .card-text {
-  font-size: 12px;
+
+#courses-page .card-body h5{
+  font-family: "OpenSans-bold";
+  font-weight: 100px;
+}
+#courses-page .card-text{
+    font-weight: bold;
+    font-family: "OpenSans-light";
+    font-size: 12px;
+}
+#courses-page .fee{
+  font-family: 'OpenSans-light';
   font-weight: bold;
-  font-family: "OpenSans-light";
+  font-size: 15px;
 }
 #courses-page .courses-cards:hover .courses-image1,
 #courses-page .courses-cards:hover .courses-image2,
 #courses-page .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
 }
+#courses-page .card:hover{
+  opacity: 0.8;
+}
+#courses-page .category_link:hover{
+  background-color: rgba(236, 233, 233, 0.8);
+  
+}
 
+#courses-page input[type="text"],
+textarea {
+  background-color: rgba(236, 233, 233, 0.8);
+  
+}
+#courses-page .search a {
+  background-color: rgba(236, 233, 233, 0.8);
+}
+#courses-page .all-span{
+  background-color: rgba(236, 233, 233, 0.8);
+}
 /************************* Navbar Effect ***************************/
 #navbar ul li a {
   padding: 8px 8px 0px 8px;
@@ -573,10 +603,4 @@
   transform: translateX(-100%);
 }
 
-#courses input[type="text"],
-textarea {
-  background-color: rgba(236, 233, 233, 0.719);
-}
-#courses .search a {
-  background-color: rgba(236, 233, 233, 0.719);
-}
+
