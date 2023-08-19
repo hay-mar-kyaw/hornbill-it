@@ -29,7 +29,7 @@
 }
 
 /************************** WHY CHOOSE US **************************/
-#why-choose-us .accordion-item {
+/* #why-choose-us .accordion-item {
   border: 1px solid var(--first-color);
 }
 #why-choose-us .accordion-button:not(.collapsed) {
@@ -67,6 +67,7 @@
   content: "";
   background-image: none;
 }
+*/
 #why-choose-us .images {
   max-height: 400px;
   object-fit: contain;
@@ -118,6 +119,30 @@
   position: absolute;
   bottom: 0;
 }
+#why-choose-us .accordion {
+  --bs-accordion-border-color: none;
+}
+#why-choose-us .accordion-body {
+  color: var(--fourth-color);
+  font-family: "OpenSans-light";
+}
+#why-choose-us .accordion-button {
+  border: 1px solid var(--first-color);
+}
+#why-choose-us .accordion-button:not(.collapse) {
+  background-color: none;
+}
+#why-choose-us .accordion-button:focus {
+  border: 1px solid var(--first-color);
+  box-shadow: none;
+}
+#why-choose-us .accordion-button:not(.collapsed) {
+  background-color: var(--third-color);
+}
+#why-choose-us .accordion-button::after {
+  content: "";
+  color: var(--first-color);
+}
 /*************************** Ab ***************************/
 #about .about-header {
   font-size: 3rem;
@@ -136,7 +161,7 @@
   position: relative;
   z-index: 1;
 }
-  
+
 #about .back-img::before {
   content: "";
   width: 67%;
@@ -171,7 +196,6 @@
   z-index: -1;
 }
 #about .line {
-  
   position: absolute;
   top: 4rem;
   left: 7rem;
@@ -187,7 +211,7 @@
 }
 #quick-answer .accordion-body {
   color: var(--fourth-color);
-  font-family: 'OpenSans-light';
+  font-family: "OpenSans-light";
 }
 #quick-answer .accordion-button {
   border: 1px solid var(--first-color);
@@ -410,11 +434,11 @@
   color: var(--third-color);
   transition: 0.5s;
 }
-.footerwaves{
-  position:relative;
+.footerwaves {
+  position: relative;
   z-index: -1;
 }
- .footerwave {
+.footerwave {
   position: absolute;
   top: 0px;
   left: 0;
@@ -423,25 +447,25 @@
   background: url(../images/wave.jpg);
   background-size: 2000px 100px;
 }
- .footerwave#footerwave1 {
+.footerwave#footerwave1 {
   z-index: 1;
   opacity: 1;
   bottom: 0;
   animation: animatWave 8s linear infinite;
 }
- .footerwave#footerwave2 {
+.footerwave#footerwave2 {
   z-index: 2;
   opacity: 0.7;
   bottom: 0;
   animation: animatWave-02 8s linear infinite;
 }
- .footerwave#footerwave3 {
+.footerwave#footerwave3 {
   z-index: 3;
   opacity: 0.4;
   bottom: 15px;
   animation: animatWave-02 6s linear infinite;
 }
- .footerwave#footerwave4 {
+.footerwave#footerwave4 {
   z-index: 4;
   opacity: 0.2;
   bottom: 20px;
@@ -524,17 +548,17 @@
   transition: 0.7s;
 }
 
-#courses-page .card-body h5{
+#courses-page .card-body h5 {
   font-family: "OpenSans-bold";
   font-weight: 100px;
 }
-#courses-page .card-text{
-    font-weight: bold;
-    font-family: "OpenSans-light";
-    font-size: 12px;
+#courses-page .card-text {
+  font-weight: bold;
+  font-family: "OpenSans-light";
+  font-size: 12px;
 }
-#courses-page .fee{
-  font-family: 'OpenSans-light';
+#courses-page .fee {
+  font-family: "OpenSans-light";
   font-weight: bold;
   font-size: 15px;
 }
@@ -543,23 +567,21 @@
 #courses-page .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
 }
-#courses-page .card:hover{
+#courses-page .card:hover {
   opacity: 0.8;
 }
-#courses-page .category_link:hover{
+#courses-page .category_link:hover {
   background-color: rgba(236, 233, 233, 0.8);
-  
 }
 
 #courses-page input[type="text"],
 textarea {
   background-color: rgba(236, 233, 233, 0.8);
-  
 }
 #courses-page .search a {
   background-color: rgba(236, 233, 233, 0.8);
 }
-#courses-page .all-span{
+#courses-page .all-span {
   background-color: rgba(236, 233, 233, 0.8);
 }
 /************************* Navbar Effect ***************************/
@@ -602,5 +624,3 @@ textarea {
   width: 50%;
   transform: translateX(-100%);
 }
-
-
