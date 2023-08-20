@@ -628,3 +628,214 @@ textarea {
   width: 50%;
   transform: translateX(-100%);
 }
+
+/* *************************************  COURSES DETAIL ******************************************* */
+/* Hero Section */
+
+#hero-section nav a {
+  text-decoration: none;
+  color: var(--fourth-color);
+  font-weight: 700;
+}
+#hero-section .rating {
+  color: var(--first-color);
+}
+#hero-section i {
+  font-size: 12px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--third-color);
+}
+
+#hero-section {
+  position: relative;
+}
+
+/* What you will learn */
+.learn-detail {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  letter-spacing: normal;
+  white-space: normal;
+  padding: 4px 0;
+}
+.learn-detail span {
+  font-size: 16px;
+}
+
+#invisible-text {
+  display: none;
+}
+#invisible-text2 {
+  display: none;
+}
+#main a,
+.box a,
+#instructor #button4 {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Course Content */
+#course-content .accordion {
+  --bs-accordion-border-color: none;
+}
+#course-content .accordion-body {
+  color: var(--fourth-color);
+  font-family: "OpenSans-light";
+}
+#course-content .accordion-button {
+  border: 1px solid var(--first-color);
+}
+#course-content .accordion-button:not(.collapse) {
+  background-color: none;
+}
+#course-content .accordion-button:focus {
+  border: 1px solid var(--first-color);
+  box-shadow: none;
+}
+#course-content .accordion-button:not(.collapsed) {
+  background-color: var(--third-color);
+}
+#course-content .accordion-button::after {
+  content: "";
+  color: var(--first-color);
+}
+
+/* Content Section */
+#invisible-text3 {
+  display: none;
+}
+#content-text {
+  opacity: 0.2;
+}
+
+/* Instructor Section */
+#instructor img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#invisible-text4 {
+  display: none;
+}
+#instructor-text {
+  opacity: 0.2;
+}
+
+/* Review Section */
+#review img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#review i {
+  color: var(--first-color);
+}
+#review .like,
+#review .unlike {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 33px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* *************** CARD ******************* */
+#cards {
+  width: 340px;
+  box-shadow: 2px 2px 6px var(--fourth-color);
+  position: absolute;
+  top: 22.5rem;
+  right: 4.7rem;
+  background-color: var(--third-color);
+}
+#cards .btn {
+  width: 100%;
+  background-color: white;
+  margin: 5px 0;
+  padding: 10px 0;
+  border-radius: 0;
+}
+#cards .btn:hover {
+  background-color: #9e9fa04f;
+}
+
+#cards .add-to-card-btn {
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+#cards .add-to-card-btn:hover {
+  background-color: #df4300;
+}
+#cards p {
+  font-size: 13px;
+}
+#cards ul li {
+  margin: 5px 0;
+}
+#cards .same-font {
+  font-size: 14px;
+}
+.video {
+  width: 340px;
+  position: absolute;
+  top: 8rem;
+  right: 4.7rem;
+}
+.yt {
+  display: none;
+  height: 340px;
+}
+.card-hidd {
+  display: none;
+}
+/* Responsive */
+@media (max-width: 1176px) {
+  #cards {
+    display: none;
+  }
+  .video {
+    display: none;
+  }
+  .yt {
+    display: block;
+    width: 100%;
+  }
+  .hero-center {
+    margin: auto;
+  }
+  .card-hidd {
+    display: block;
+  }
+  .card-hidd .btn {
+    width: 100%;
+    background-color: white;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  .card-hidd .add-to-card-btn {
+    color: var(--third-color);
+    background-color: var(--first-color);
+  }
+  .card-hidd .add-to-card-btn:hover {
+    background-color: #df4300;
+  }
+  .card-hidd p {
+    font-size: 13px;
+  }
+  .lin {
+    margin: 0 auto;
+  }
+}

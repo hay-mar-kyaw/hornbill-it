@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses Details</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <!-- Bootstrap Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/lzp.css" />
+    <!-- Fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="assets/icons/fontawesome-free-6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section  -->
+    <nav id="navbar" class="navbar navbar-expand-lg shadow-sm">
+      <div class="container d-flex">
+        <a class="navbar-brand d-lg-flex w-25" href="#">
+          <img
+            src="assets/images/logo.png"
+            class="img-fluid me-1"
+            style="height: auto; width: 8rem"
+            alt=""
+          />
+          <div
+            class="brand-text d-flex flex-column py-2"
+            style="line-height: 25px"
+          >
+            <span>HORNBILL</span>
+            <span class="fs-6" style="color: var(--first-color)"
+              >Information Technology</span
+            >
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="py-5 px-3 bg-dark">
+      <div class="container row mx-auto py-5 px-0 d-flex flex-column-reverse">
+        <div class="col-lg-9 col-md-12 hero-center hero p-0">
+          <div style="width: 90%" class="">
+            <h1 class="fw-bold text-white mt-3">
+              The Complete HIT Bootcamp From Zero to Hero in PHP
+            </h1>
+            <p class="text-white fs-6">
+              Learn php like a Professional Start from the basics and go all the
+              way to creating your own web applications.
+            </p>
+          </div>
+          <div class="card-hidd mt-5">
+            <h2 class="text-white">1500,000 MMK</h2>
+            <button class="btn add-to-card-btn fw-bold">Entroll now</button>
+            <p class="text-center mt-2 text-secondary">
+              30-Day Money-Back Guarantee
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12 p-0 mx-auto">
+          <embed
+            class="yt"
+            src="https://www.youtube.com/embed/AtxZKob8IVQ"
+            type="video/mp4"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- What you will learn -->
+    <section id="main" class="pb-1 pt-5 px-3">
+      <div class="container mx-auto">
+        <div class="row">
+          <div class="col-md-8 border border-secondary py-3 px-3 lin">
+            <h3 class="fw-bold">What you'll learn</h3>
+            <div class="row py-2 px-3">
+              <div class="col-md-6 p-0">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >You will learn how to leverage the power of Python to
+                          solve tasks.</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >You will be able to use Python for your own work
+                          problems or personal projects.</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >Learn to use Python professionally, learning both
+                          Python 2 and Python 3!</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >Learn advanced Python features, like the collections
+                          module!</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <span id="dots2"></span>
+                  <span id="invisible-text2"
+                    ><li>
+                      <div class="learn-detail">
+                        <i class="bi bi-check2"></i>
+                        <div class="content ms-2">
+                          <span
+                            >Understand complex topics, like decorators.</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="learn-detail">
+                        <i class="bi bi-check2"></i>
+                        <div class="content ms-2">
+                          <span
+                            >Get an understanding of how to create GUIs in the
+                            Jupyter Notebook system!</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </span>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >You will build games and programs that use Python
+                          libraries.</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >You will create a portfolio of Python based projects
+                          you can share.</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >Create games with Python, like Tic Tac Toe and
+                          Blackjack!</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="learn-detail">
+                      <i class="bi bi-check2"></i>
+                      <div class="content ms-2">
+                        <span
+                          >Learn to use Object Oriented Programming with
+                          classes!</span
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <span id="dots"></span>
+                  <span id="invisible-text"
+                    ><li>
+                      <div class="learn-detail">
+                        <i class="bi bi-check2"></i>
+                        <div class="content ms-2">
+                          <span
+                            >Understand how to use both the Jupyter Notebook and
+                            create .py files</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="learn-detail">
+                        <i class="bi bi-check2"></i>
+                        <div class="content ms-2">
+                          <span
+                            >Build a complete understanding of Python from the
+                            ground up!</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                  </span>
+                </ul>
+              </div>
+              <a id="button" class="float-start" onclick="moreLess()"
+                >See more <i class="bi bi-chevron-down"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------- Card ------------->
+    <section class="bg-white">
+      <div class="video">
+        <embed
+          height="230px"
+          class="w-100"
+          src="https://www.youtube.com/embed/AtxZKob8IVQ"
+          type="video/mp4"
+        />
+      </div>
+      <div id="cards" class="p-4">
+        <div>
+          <h2>1500,000 MMK</h2>
+          <button class="btn add-to-card-btn fw-bold">Entroll now</button>
+          <p class="text-center mt-2 text-secondary">
+            30-Day Money-Back Guarantee
+          </p>
+          <div class="fw-bold">This course includes:</div>
+          <ul class="list-unstyled same-font">
+            <li>
+              <i class="bi bi-file-earmark-play me-2"></i> 22 hours on-demand
+              video
+            </li>
+            <li><i class="bi bi-code-slash me-2"></i> 19 coding exercises</li>
+            <li><i class="bi bi-file-earmark me-2"></i> 15 articles</li>
+            <li><i class="bi bi-phone me-2"></i> Access on mobile and TV</li>
+            <li><i class="bi bi-shuffle me-2"></i> Full lifetime access</li>
+            <li><i class="bi bi-award me-2"></i> Certificate of completion</li>
+          </ul>
+        </div>
+        <div class="border border-0 border-top border-dark mt-4">
+          <div class="fs-5 fw-bold pt-3 pb-1">Training 5 or more people?</div>
+          <div class="same-font">
+            Get your team access to 22,000+ top Udemy courses anytime, anywhere.
+          </div>
+          <button class="btn buy-now-btn border border-dark fw-bold mt-3">
+            Try Hornbill Business
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Content -->
+    <section id="course-content" class="py-1 px-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 py-5 lin">
+            <h3 class="fw-bold pb-4">Course content</h3>
+            <div class="d-flex justify-content-between">
+              <div style="font-size: 14px">
+                23 sections • 156 lectures • 22h 13m total length
+              </div>
+              <div>
+                <a href="" class="text-decoration-none fw-bold"
+                  >Expand all sections</a
+                >
+              </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item my-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What programs does HIT offer?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    What programs does HIT offer?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    What programs does HIT offer?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    What programs does HIT offer?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item my-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    What programs does HIT offer?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content " class="py-1 px-3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-8 lin">
+            <div>
+              <h3 class="fw-bold pb-2">Requirements</h3>
+              <ul class="ps-3">
+                <li>Access to a computer with an internet connection.</li>
+              </ul>
+            </div>
+            <h3 class="fw-bold pb-2 pt-4">Description</h3>
+            <div class="box">
+              <div>
+                <p class="m-0 fw-bold">
+                  Become a Python Programmer and learn one of employer's most
+                  requested skills of 2023!
+                </p>
+                <p>
+                  This is the most comprehensive, yet straight-forward, course
+                  for the Python programming language on Udemy! Whether you have
+                  never programmed before, already know basic syntax, or want to
+                  learn about the advanced features of Python, this course is
+                  for you! In this course we will teach you Python 3.
+                </p>
+                <p>
+                  With over 100 lectures and more than 21 hours of video this
+                  comprehensive course leaves no stone unturned! This course
+                  includes quizzes, tests, coding exercises and homework
+                  assignments as well as 3 major projects to create a Python
+                  project portfolio!
+                </p>
+                <p class="fw-bold" id="content-text">
+                  Learn how to use Python for real-world tasks, such as working
+                  with PDF Files, sending emails, reading Excel files, Scraping
+                  websites for informations, working with image files, and much
+                  more!
+                </p>
+                <span id="dots3"></span>
+                <span id="invisible-text3">
+                  <p>
+                    This course will teach you Python in a practical manner,
+                    with every lecture comes a full coding screencast and a
+                    corresponding code notebook! Learn in whatever manner is
+                    best for you!
+                  </p>
+                  <p>
+                    We will start by helping you get Python installed on your
+                    computer, regardless of your operating system, whether its
+                    Linux, MacOS, or Windows, we've got you covered.
+                  </p>
+                  <p>We cover a wide variety of topics, including:</p>
+                  <ul>
+                    <li>Command Line Basics</li>
+                    <li>Installing PHP</li>
+                    <li>Running Python Code</li>
+                    <li>Strings</li>
+                    <li>Lists</li>
+                    <li>Dictionaries</li>
+                    <li>Tuples</li>
+                    <li>Sets</li>
+                    <li>Number Data Types</li>
+                    <li>Print Formatting</li>
+                    <li>Functions</li>
+                    <li>Scope</li>
+                    <li>Debugging and Error Handling</li>
+                    <li>Built-in Functions</li>
+                  </ul>
+                  <p class="fw-bold">
+                    You will get lifetime access to over 100 lectures plus
+                    corresponding Notebooks for the lectures!
+                  </p>
+                  <p>
+                    This course comes with a 30 day money back guarantee! If you
+                    are not satisfied in any way, you'll get your money back.
+                    Plus you will keep access to the Notebooks as a thank you
+                    for trying out the course!
+                  </p>
+                  <p class="fw-bold">
+                    So what are you waiting for? Learn Python in a way that will
+                    advance your career and increase your knowledge, all in a
+                    fun and practical way!
+                  </p>
+                  <h3 class="fw-bold">Who this course is for:</h3>
+                  <ul>
+                    <li>Beginners who have never programmed before.</li>
+                    <li>Programmers switching languages to Python.</li>
+                    <li>
+                      Intermediate Python programmers who want to level up their
+                      skills!
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <a id="button3" class="float-start" onclick="seeLess()"
+                >See more <i class="bi bi-chevron-down"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section id="instructor" class="py-1 px-3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-8 lin">
+            <h3 class="fw-bold pb-2">Instructor</h3>
+            <h5><a href="">Jose Portilla</a></h5>
+            <p>Head of Data Science at Pierian Training</p>
+            <div class="d-flex align-items-center mb-3">
+              <div>
+                <img src="./assets/images/boy2.jpg" />
+              </div>
+            </div>
+            <div>
+              <p>
+                Jose Marcial Portilla has a BS and MS in Mechanical Engineering
+                from Santa Clara University and years of experience as a
+                professional instructor and trainer for Data Science, Machine
+                Learning and Python Programming. He has publications and patents
+                in various fields such as microfluidics, materials science, and
+                data science. Over the course of his career he has developed a
+                skill set in analyzing data and he hopes to use his experience
+                in teaching and data science to help other people learn the
+                power of
+                <span id="instructor-text"
+                  >programming, the ability to analyze data, and the skills
+                  needed to present the data in clear and</span
+                >
+                <span id="dots4"></span>
+                <span id="invisible-text4"
+                  >beautiful visualizations. Currently he works as the Head of
+                  Data Science for Pierian Training and provides in-person data
+                  science and python programming training courses to employees
+                  working at top companies, including General Electric, Cigna,
+                  SalesForce, Starbucks, McKinsey and many more. Feel free to
+                  check out the website link to find out more information about
+                  training offerings.
+                </span>
+              </p>
+              <a id="button4" class="float-start" onclick="see()"
+                >See more <i class="bi bi-chevron-down"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review" class="py-1 px-3">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-8 lin p-4 border border-1 border-secondary">
+            <h3 class="fw-bold pb-3">Featured review</h3>
+            <div class="d-flex">
+              <div>
+                <img src="./assets/images/boy1.jpg" />
+              </div>
+              <ul class="list-unstyled ps-2">
+                <li class="fw-bold">Ken K.</li>
+                <li>9 courses</li>
+                <li>2 reviews</li>
+              </ul>
+            </div>
+            <div>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span class="ps-2 text-secondary">2 years ago</span>
+            </div>
+            <p class="pt-2">
+              Everything on this course is a goldmine except for the GUI since
+              it's specific for Jupyter Notebooks and it's missing the video for
+              GUI Events. Still it was a nice introduction to GUI. Don't let
+              that disappoint you though. THIS IS A MUST HAVE COURSE. I have
+              already recommended it to few people and always will. Do yourself
+              a favor and do this course if you want to learn Python 3. Thank
+              you so much for this course, Jose-sensei!!
+            </p>
+            <p class="text-secondary" style="font-size: 14px">
+              Was this review helpful?
+            </p>
+            <div class="like">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 16 16"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="16" height="16" id="icon-bound" fill="none" />
+                <path
+                  d="M3,6L3,15L0,15L0,6L3,6ZM15,5C15.265,5 15.52,5.105 15.707,5.293C15.895,5.48 16,5.735 16,6C16,7.167 16,9.025 16,9.723C16,9.904 15.951,10.082 15.857,10.238C15.455,10.908 14.295,12.842 13.583,14.029C13.221,14.631 12.57,15 11.868,15C10.397,15 7.805,15 6,15C5.47,15 4.961,14.789 4.586,14.414C4.211,14.039 4,13.53 4,13C4,10.745 4,7.197 4,5.702C4,5.247 4.155,4.807 4.438,4.452C5.477,3.154 8,0 8,0C8,0 8,0 8,0C8.552,0 9,0.448 9,1L9,5L15,5Z"
+                />
+              </svg>
+            </div>
+            <div class="unlike mx-2">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 16 16"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="16" height="16" id="icon-bound" fill="none" />
+                <path
+                  d="M3,10L3,1L0,1L0,10L3,10ZM15,11C15.265,11 15.52,10.895 15.707,10.707C15.895,10.52 16,10.265 16,10C16,8.833 16,6.975 16,6.277C16,6.096 15.951,5.918 15.857,5.762C15.455,5.092 14.295,3.158 13.583,1.971C13.221,1.369 12.57,1 11.868,1C10.397,1 7.805,1 6,1C5.47,1 4.961,1.211 4.586,1.586C4.211,1.961 4,2.47 4,3C4,5.255 4,8.803 4,10.298C4,10.753 4.155,11.193 4.438,11.548C5.477,12.846 8,16 8,16C8,16 8,16 8,16C8.552,16 9,15.552 9,15L9,11L15,11Z"
+                />
+              </svg>
+            </div>
+            <a href="">Report</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/icons/fontawesome-free-6.4.2/js/all.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/lzp.js"></script>
+  </body>
+</html>
