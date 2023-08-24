@@ -62,4 +62,9 @@ window.onscroll = () => {
   } else {
     card.style.cssText = `position: absolute; top: 22.5rem; right: 4.7rem;`;
   }
+
+  
+
+
+  
 };
