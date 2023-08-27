@@ -439,6 +439,7 @@
   transition: 0.5s;
 }
 .footerwaves {
+  
   position: relative;
   z-index: -1;
 }

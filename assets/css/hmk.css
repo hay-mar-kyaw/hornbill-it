@@ -12,26 +12,15 @@
     color:var(--first-color);
 }
 
-/* Header Icons  */
- #courses-icons .icons{
-    color:var(--first-color);
-}
 
-/* Main header  */
-/* .main-header{
-  height: 85vh;
-  background-color: var(--first-color);
-} */
+
+
 /* Navbar section  */
 
 .navbar{
     background-color: var(--first-color);
-    /* background: linear-gradient(to left,var(--first-color),var(--fourth-color)); */
 }
-#navbar .logo-img{
-    width: 100%;
-    height: 3rem;
-}
+
 .navbar-brand{
     position: relative;
 }
@@ -40,24 +29,27 @@
     top: 10px;
     left: 140px;
 }
+#navbar .logo-text1{
+  letter-spacing: 6px;
+}
+
+#navbar .logo-text2{
+  font-size: 12px;
+}
 
 /* Hero Section  */
-#header .wave-container{
-    height:72vh ;
+#header .header-wrapper{
+    height: 100vh;
     position: relative;
-    background-color: var(--first-color);
-    /* background:linear-gradient(to left,var(--first-color),var(--fourth-color)); */
-    /* overflow: hidden; */
-    /* background-color: var(--first-color); */
-    
+    background-color: #f1f5f9;
 }
 
 /* Hero  Button Section  */
 #header .button {
     padding: 10px;
     border-radius: 1px;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
     text-decoration: none;
     position: relative;
   }
@@ -68,7 +60,7 @@
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% - 12px);
-    background-color: rgb(246, 82, 11);
+    background-color: var(--third-color);
     transition: 0.5s ease-in-out 0.5s;
     transform: scaleY(1);
   }
@@ -83,7 +75,7 @@
     top: -2px;
     width: calc(100% - 12px);
     height: calc(100% + 4px);
-    background-color: rgb(246, 82, 11);
+    background-color: var(--third-color);
     transition: 0.5s ease-in-out;
     transform: scaleX(1);
   }
@@ -97,64 +89,24 @@
 /* End Hero Button Section  */
 
 /* Wave section  */
-  .waves   {
-    position: relative;
-    z-index: -1;
-  }
-   .wave {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(../images/color2.jpg);
-    background-size: 2000px 100px;
-  }
-   .wave#wave1 {
-    z-index: 1;
-    opacity: 1;
-    bottom: 0;
-    animation: animatWave 8s linear infinite;
-  }
-   .wave#wave2 {
-    z-index: 2;
-    opacity: 0.7;
-    bottom: 0;
-    animation: animatWave-02 8s linear infinite;
-  }
-   .wave#wave3 {
-    z-index: 3;
-    opacity: 0.4;
-    bottom: 15px;
-    animation: animatWave-02 6s linear infinite;
-  }
-   .wave#wave4 {
-    z-index: 4;
-    opacity: 0.2;
-    bottom: 20px;
-    animation: animatWave-02 6s linear infinite;
-  }
-  @keyframes animatWave {
-    0% {
-      background-position-x: 2000px;
-    }
-  
-    100% {
-      background-position-x: 0px;
-    }
-  }
-  @keyframes animatWave-02 {
-    0% {
-      background-position-x: 0px;
-    }
-  
-    100% {
-      background-position-x: 2000px;
-    }
-  }
+.waves{
+ position: relative;
+ top: 0px;
+}
 
+ /* Header Icons  */
+#courses-icons{
+  background-color: #f1f5f9;
+}
+ #courses-icons .icons{
+    color:var(--first-color);
+    
+}
 
 /* About Section  */
+#about{
+  background-color: #f1f5f9;
+}
 #about .about-header{
     font-size: 3rem;
 }
@@ -218,7 +170,9 @@
 } */
 
 /* Courses Section  */
-
+#courses{
+  background-color: #f1f5f9;
+}
 #courses .courses-cards{
     background-color: var(--first-color);
     position: relative;
@@ -270,8 +224,8 @@
 }
 
 /* Who is founder Section  */
-.founder-wrapper{
-    /* border: 1px solid blue; */
+/* .founder-wrapper{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,10 +238,9 @@
   background-position: center center;
   width: 300px;
   height: 300px;
-  /* box-shadow: 0px 20px 5px 5px rgba(0, 0, 0, 0.2); */
   animation: animate 5s ease-in-out infinite;
   transition: all 1s;
-  /* z-index: -1; */
+  
 
 }
 @keyframes animate{
@@ -300,9 +253,11 @@
   100%{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
+} */
+
+#founder{
+  background-color: #f1f5f9;
 }
-
-
 #founder .social-icons{
   padding:10px;
   width: 30px;
@@ -343,12 +298,12 @@
 
 
 /* Media Query */
-@media (max-width:600px)
+/* @media (max-width:600px)
 {
   #header .wave-container{
     height:100vh ;
 }
-}
+} */
 
 
 
