@@ -25,7 +25,7 @@
 
 
 body{
-    background-color: var(--third-color);
+    background-color: #f1f5f9;
     /* background: linear-gradient(to left,var(--first-color),var(--second-color)); */
     /* overflow-x: hidden; */
 }

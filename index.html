@@ -21,16 +21,16 @@
     <link rel="stylesheet" href="assets/css/hmk.css">
   </head>
   <body>
-    <main class="overflow-hidden">
+    <main class="overflow-hidden main-div">
       
-      <!-- Navbar Section  -->
-      <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="container d-flex py-2">
+        <!-- Navbar Section  -->
+        <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container d-flex">
           <a class="navbar-brand d-lg-flex w-25" href="index.html">
               <img src="assets/images/logo.png" class="img-fluid  me-1" style="height: auto; width: 6rem;object-fit: contain;" alt="">
               <div class="brand-text d-flex flex-column py-2" style="line-height: 25px;">
-                  <span>HORNBILL</span>
-                  <span class="text-light fs-6">Information Technology</span>
+                  <span class="logo-text1">HORNBILL</span>
+                  <span class="logo-text2 text-light">Information Technology</span>
               </div>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-3">
-                  <a class="nav-link text-light  active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item mx-3">
                   <a class="nav-link text-light" href="#about">About</a>
@@ -56,46 +56,35 @@
             </ul>
           </div>
         </div>
-      </nav>
+        </nav>
 
-      <!-- Hero Section  -->
-      <header id="header">      
-        <div class="wave-container pt-5">
-              <div class="row mt-4" style="min-height: 30vh;">
-                  <div class="col-lg-7">
-                    <img src="assets/images/heroImg.png" class="img-fluid" alt="">
+         <!-- Hero Section  -->
+        <section id="header">      
+            <div class="header-wrapper pt-5">
+                  <div class="row mt-4" style="min-height: 30vh;">
+                      <div class="col-lg-7">
+                        <img src="assets/images/heroImg.png" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-lg-3 mt-5 p-4">
+                        <h1 class="header mb-2">
+                          Discover Your Future at <a href="" class="header text-decoration-none" style="color: var(--first-color);">HIT</a>
+                        </h1>
+                        <p class="subHeader mb-4">
+                          Let our experts prepare a free home analysis for you! Just fill out our form.Surround yourself with the luxury and quality of one of.
+                        </p>
+                        <a href="#" class="button"><span>ENROLLED NOW</span> </a>
+                        
+                        
+                    </div>
                   </div>
-                  <div class="col-lg-3 mt-5 p-4">
-                    <h1 class="header text-light mb-2">
-                      Discover Your Future at <a href="" class="header text-dark text-decoration-none">HIT</a>
-                    </h1>
-                    <p class="subHeader text-light mb-4">
-                      Let our experts prepare a free home analysis for you! Just fill out our form.Surround yourself with the luxury and quality of one of.
-                    </p>
-                    <a href="#" class="button"><span>ENROLLED NOW</span> </a>
-                    
-                    <!-- <button class="btn btn-outline-light rounded-0 p-3">
-                      ENROLLED NOW
-                    </button> -->
-                </div>
-              </div>
-               
-        </div> 
-        
-              
-      </header>
-    
-
-      <!-- Wave Animation Section  -->
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-    </div>
-
-      <!-- Icon Section  -->
-    <section id="courses-icons" class="my-5 py-5" style="position:relative; top:70px">
+                  
+            </div> 
+            
+                  
+        </section>
+      
+     <!-- Icon Section  -->
+    <section id="courses-icons" class="my-5 py-5" style="position:relative; top:-80px">
       <div class="container d-flex justify-content-center">
           <div class="row text-center" style="width: 800px;">
               <div class="col-md-4 border border-3 border-top-0 border-bottom-0 border-start-0 border-end-3">
@@ -483,11 +472,7 @@
           <h1 class="header mb-5 text-center">Founder & CEO Of <p class="d-inline color header">HIT</p></h1>
           <div class="row py-5 gy-5 gx-md-5 justify-content-center align-items-center">
                 <div class="col-lg-5">
-                   <div class="founder-wrapper">
-                      <div class="founder-imgbox">
-                      </div>
-                      
-                   </div>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;"><image x="0" y="60" width="100%" height="100%" clip-path="url(#shape)" href="assets/images/founder.jpg?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80" preserveAspectRatio="none"></image>                        <defs>                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">                            <stop offset="0%" style="stop-color: rgb(238, 205, 163);"></stop>                            <stop offset="100%" style="stop-color: rgb(239, 98, 159);"></stop>                        </linearGradient>                        </defs>                                            <clipPath id="shape"><path id="blob" fill="url(#gradient)">                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate>                        </path></clipPath></svg>
                     
                 </div>
                 <div class="col-lg-4 text-center text-lg-start">
@@ -1266,5 +1251,6 @@
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/icons/fontawesome-free-6.4.2/js/all.min.js"></script>
     <script src="assets/js/app.js"></script>
+    
   </body>
 </html>
