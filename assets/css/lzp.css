@@ -570,24 +570,26 @@
 #courses-page .courses-cards:hover .courses-image2,
 #courses-page .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
-}
-#courses-page .card:hover {
   opacity: 0.8;
 }
-#courses-page .category_link:hover {
-  background-color: rgba(236, 233, 233, 0.8);
+#courses-page .courses .card {
+  transition: 0.3s;
+}
+#courses-page .courses .card:hover {
+  background-color: rgb(57, 57, 57);
+}
+#courses-page .top-courses .card:hover {
+  opacity: 0.8;
+}
+#courses-page .category_link a {
+  transition: 0.4s;
+}
+#courses-page .category_link:hover a {
+  padding: 0 5px;
+  background-color: #f1490773;
+  border-radius: 1px;
 }
 
-#courses-page input[type="text"],
-textarea {
-  background-color: rgba(236, 233, 233, 0.8);
-}
-#courses-page .search a {
-  background-color: rgba(236, 233, 233, 0.8);
-}
-#courses-page .all-span {
-  background-color: rgba(236, 233, 233, 0.8);
-}
 /************************* Navbar Effect ***************************/
 #navbar ul li a {
   padding: 8px 8px 0px 8px;
