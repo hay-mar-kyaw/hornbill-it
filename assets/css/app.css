@@ -3,6 +3,10 @@
     src: url('../fonts/Lora/static/Lora-Bold.ttf');
 }
 @font-face {
+    font-family: "Lora-light";
+    src: url('../fonts/Lora/static/Lora-Regular.ttf');
+}
+@font-face {
     font-family: "OpenSans-Bold";
     src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');
 }

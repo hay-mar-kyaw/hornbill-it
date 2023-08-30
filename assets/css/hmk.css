@@ -5,6 +5,9 @@
 .header{
     font-family: "Lora-Bold";
 }
+.header1{
+  font-family: "Lora-light";
+}
 .subHeader{
     font-family: "OpenSans-Bold";
 }
@@ -18,7 +21,7 @@
 /* Navbar section  */
 
 .navbar{
-    background-color: var(--first-color);
+    background-color: var(--third-color);
 }
 
 .navbar-brand{
@@ -39,9 +42,15 @@
 
 /* Hero Section  */
 #header .header-wrapper{
-    height: 100vh;
+    height: 85vh;
     position: relative;
     background-color: #f1f5f9;
+}
+#header .image-bg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--first-color);
 }
 
 /* Hero  Button Section  */
@@ -104,9 +113,7 @@
 }
 
 /* About Section  */
-#about{
-  background-color: #f1f5f9;
-}
+
 #about .about-header{
     font-size: 3rem;
 }
@@ -170,9 +177,7 @@
 } */
 
 /* Courses Section  */
-#courses{
-  background-color: #f1f5f9;
-}
+
 #courses .courses-cards{
     background-color: var(--first-color);
     position: relative;
@@ -255,9 +260,7 @@
   }
 } */
 
-#founder{
-  background-color: #f1f5f9;
-}
+
 #founder .social-icons{
   padding:10px;
   width: 30px;
