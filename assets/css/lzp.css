@@ -264,6 +264,9 @@
   margin: auto;
   background-color: #f1f5f9;
 }
+#testimonial p {
+  font-family: "OpenSans-light";
+}
 #testimonial .client-msg {
   background-color: var(--third-color);
   border-radius: 7px;
@@ -392,6 +395,7 @@
   padding-left: 0;
   font-weight: 500;
   border-bottom: 1px solid var(--first-color);
+  font-family: "OpenSans-light";
 }
 .form-control {
   background-color: #f1f5f9;
@@ -517,6 +521,59 @@
   }
 }
 
+/* =============================== Courses Card In Main=================================== */
+/* Courses Section  */
+
+#course .courses-cards {
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgb(205, 205, 205);
+  overflow: hidden;
+}
+#course .card:hover {
+  opacity: 0.8;
+}
+#course .starr {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+#course .courses-title {
+  background-color: var(--first-color);
+  color: white;
+}
+#course .courses-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+#course img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.7s;
+}
+#course .fon {
+  font-family: "OpenSans-light";
+}
+#course span,
+#course i {
+  color: var(--first-color);
+  font-family: "OpenSans-light";
+}
+#course .starr i {
+  color: goldenrod;
+  font-size: 13px;
+}
+#course .card-text,
+#course .wrapper {
+  font-size: 14px;
+  font-family: "OpenSans-light";
+}
+#course .courses-cards:hover .courses-image1,
+#course .courses-cards:hover .courses-image2,
+#course .courses-cards:hover .courses-image3 {
+  transform: scale(1.2);
+}
+
 /********************************* Courses  section  **************************/
 #courses .course-outline-button {
   background-color: rgba(246, 82, 11, 0.1);
@@ -550,7 +607,7 @@
 
 /* Courses Sections  */
 
-#courses-page .courses-cards {
+/* #courses-page .courses-cards {
   background-color: var(--first-color);
   position: relative;
   overflow: hidden;
@@ -602,13 +659,68 @@
 #courses-page .top-courses .card:hover {
   opacity: 0.8;
 }
+*/
 #courses-page .category_link a {
   transition: 0.4s;
 }
 #courses-page .category_link:hover a {
   padding: 0 5px;
   background-color: #f1490773;
-  border-radius: 1px;
+  border-radius: 4px;
+}
+/* Courses Section  */
+
+#courses-page .courses-cards {
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgb(205, 205, 205);
+  position: relative;
+  overflow: hidden;
+}
+#courses-page .card:hover {
+  opacity: 0.8;
+}
+#courses-page .starr {
+  /* position: relative;
+  top: -40px;
+  left: 15px; */
+  position: absolute;
+  top: 42%;
+  left: 15px;
+}
+#courses-page .courses-title {
+  background-color: var(--first-color);
+  color: white;
+}
+#courses-page .courses-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+#courses-page img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+}
+#courses-page span,
+#courses-page i {
+  color: var(--first-color);
+  font-family: "OpenSans-light";
+}
+#courses-page .starr i {
+  color: goldenrod;
+  font-size: 13px;
+}
+#courses-page .fon {
+  font-family: "OpenSans-light";
+}
+#courses-page .card-text,
+#courses-page .wrapper {
+  font-size: 14px;
+  font-family: "OpenSans-light";
+}
+#courses-page .courses-cards:hover .courses-image1,
+#courses-page .courses-cards:hover .courses-image2,
+#courses-page .courses-cards:hover .courses-image3 {
+  transform: scale(1.2);
 }
 
 /************************* Navbar Effect ***************************/
