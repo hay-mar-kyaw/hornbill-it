@@ -127,9 +127,11 @@
 #why-choose-us .accordion-body {
   color: var(--fourth-color);
   font-family: "OpenSans-light";
+  background-color: #f1f5f9;
 }
 #why-choose-us .accordion-button {
   border: 1px solid var(--first-color);
+  background-color: #f1f5f9;
 }
 #why-choose-us .accordion-button:not(.collapse) {
   background-color: none;
@@ -139,7 +141,7 @@
   box-shadow: none;
 }
 #why-choose-us .accordion-button:not(.collapsed) {
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
 }
 #why-choose-us .accordion-button::after {
   content: "";
@@ -216,19 +218,20 @@
 #quick-answer .accordion-body {
   color: var(--fourth-color);
   font-family: "OpenSans-light";
+  background-color: #f1f5f9;
 }
 #quick-answer .accordion-button {
   border: 1px solid var(--first-color);
 }
 #quick-answer .accordion-button:not(.collapse) {
-  background-color: none;
+  background-color: #f1f5f9;
 }
 #quick-answer .accordion-button:focus {
   border: 1px solid var(--first-color);
   box-shadow: none;
 }
 #quick-answer .accordion-button:not(.collapsed) {
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
 }
 #quick-answer .accordion-button::after {
   content: "";
@@ -236,17 +239,14 @@
 }
 
 /*************************** Testimonial Section ***************************/
-#testimonial .carousel-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 #testimonial .carousel-item {
   position: relative;
 }
 #testimonial .card {
-  max-width: 500px;
+  max-width: 480px;
   margin: auto;
+  background-color: #f1f5f9;
 }
 #testimonial .client-msg {
   background-color: var(--third-color);
@@ -314,6 +314,10 @@
   transform: skewY(-35deg);
   background-color: var(--first-color);
 }
+#testimonial .swiper-button-next,
+#testimonial .swiper-button-prev {
+  color: var(--first-color);
+}
 
 /*************************** Contact Section ***************************/
 #contact .sub-title {
@@ -340,7 +344,7 @@
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - 12px);
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
   transition: 0.5s ease-in-out 0.5s;
   transform: scaleY(1);
 }
@@ -354,7 +358,7 @@
   top: -2px;
   width: calc(100% - 12px);
   height: calc(100% + 4px);
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
   transition: 0.5s ease-in-out;
   transform: scaleX(1);
 }
@@ -373,12 +377,15 @@
   font-weight: 500;
   border-bottom: 1px solid var(--first-color);
 }
+.form-control {
+  background-color: #f1f5f9;
+}
 .form-control::placeholder {
-  color: var(--fourth-color);
   opacity: 0.6;
 }
 #contact form input:focus {
   box-shadow: none;
+  background-color: #f1f5f9;
 }
 #contact .btn-danger {
   color: var(--third-color);
@@ -439,7 +446,6 @@
   transition: 0.5s;
 }
 .footerwaves {
-  
   position: relative;
   z-index: -1;
 }
@@ -571,24 +577,26 @@
 #courses-page .courses-cards:hover .courses-image2,
 #courses-page .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
-}
-#courses-page .card:hover {
   opacity: 0.8;
 }
-#courses-page .category_link:hover {
-  background-color: rgba(236, 233, 233, 0.8);
+#courses-page .courses .card {
+  transition: 0.3s;
+}
+#courses-page .courses .card:hover {
+  background-color: rgb(57, 57, 57);
+}
+#courses-page .top-courses .card:hover {
+  opacity: 0.8;
+}
+#courses-page .category_link a {
+  transition: 0.4s;
+}
+#courses-page .category_link:hover a {
+  padding: 0 5px;
+  background-color: #f1490773;
+  border-radius: 1px;
 }
 
-#courses-page input[type="text"],
-textarea {
-  background-color: rgba(236, 233, 233, 0.8);
-}
-#courses-page .search a {
-  background-color: rgba(236, 233, 233, 0.8);
-}
-#courses-page .all-span {
-  background-color: rgba(236, 233, 233, 0.8);
-}
 /************************* Navbar Effect ***************************/
 #navbar ul li a {
   padding: 8px 8px 0px 8px;
@@ -644,13 +652,23 @@ textarea {
 #hero-section i {
   font-size: 12px;
 }
-
+#hero-section p {
+  font-size: 14px;
+}
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--third-color);
 }
-
-#hero-section {
-  position: relative;
+.btn-outline-danger {
+  --bs-btn-color: var(--first-color);
+  --bs-btn-border-color: var(--first-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--first-color);
+  --bs-btn-hover-border-color: var(--first-color);
+}
+.btn {
+  --bs-btn-bg: #ff652325;
+  --bs-btn-border-width: 0px;
+  --bs-btn-border-radius: 2px;
 }
 
 /* What you will learn */
@@ -687,21 +705,24 @@ textarea {
   --bs-accordion-border-color: none;
 }
 #course-content .accordion-body {
-  color: var(--fourth-color);
+  background-color: #f1f5f9;
   font-family: "OpenSans-light";
 }
 #course-content .accordion-button {
   border: 1px solid var(--first-color);
+  /* border: 1px solid var(--second-color); */
 }
 #course-content .accordion-button:not(.collapse) {
-  background-color: none;
+  background-color: #f1f5f9;
 }
 #course-content .accordion-button:focus {
   border: 1px solid var(--first-color);
+  /* border: 1px solid var(--second-color); */
   box-shadow: none;
 }
 #course-content .accordion-button:not(.collapsed) {
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
+  color: var(--second-color);
 }
 #course-content .accordion-button::after {
   content: "";
@@ -737,7 +758,8 @@ textarea {
   border-radius: 50%;
   object-fit: cover;
 }
-#review i {
+#review i,
+#hero-section i {
   color: var(--first-color);
 }
 #review .like,
@@ -754,12 +776,11 @@ textarea {
 
 /* *************** CARD ******************* */
 #cards {
-  width: 340px;
   box-shadow: 2px 2px 6px var(--fourth-color);
-  position: absolute;
-  top: 22.5rem;
-  right: 4.7rem;
   background-color: var(--third-color);
+  /* max-width: 400px;
+  margin: auto; */
+  position: relative;
 }
 #cards .btn {
   width: 100%;
@@ -771,7 +792,6 @@ textarea {
 #cards .btn:hover {
   background-color: #9e9fa04f;
 }
-
 #cards .add-to-card-btn {
   color: var(--third-color);
   background-color: var(--first-color);
@@ -788,55 +808,10 @@ textarea {
 #cards .same-font {
   font-size: 14px;
 }
-.video {
-  width: 340px;
-  position: absolute;
-  top: 8rem;
-  right: 4.7rem;
-}
-.yt {
-  display: none;
-  height: 340px;
-}
-.card-hidd {
-  display: none;
-}
-/* Responsive */
-@media (max-width: 1176px) {
-  #cards {
-    display: none;
-  }
-  .video {
-    display: none;
-  }
-  .yt {
-    display: block;
-    width: 100%;
-  }
-  .hero-center {
-    margin: auto;
-  }
-  .card-hidd {
-    display: block;
-  }
-  .card-hidd .btn {
-    width: 100%;
-    background-color: white;
-    margin: 5px 0;
-    padding: 10px 0;
-    border-radius: 0;
-  }
-  .card-hidd .add-to-card-btn {
-    color: var(--third-color);
-    background-color: var(--first-color);
-  }
-  .card-hidd .add-to-card-btn:hover {
-    background-color: #df4300;
-  }
-  .card-hidd p {
-    font-size: 13px;
-  }
-  .lin {
-    margin: 0 auto;
+
+@media (max-width: 998px) {
+  #testimonial .swiper-button-next,
+  #testimonial .swiper-button-prev {
+    color: #fff;
   }
 }
