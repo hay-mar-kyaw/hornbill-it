@@ -439,7 +439,6 @@
   transition: 0.5s;
 }
 .footerwaves {
-  
   position: relative;
   z-index: -1;
 }
@@ -646,13 +645,23 @@
 #hero-section i {
   font-size: 12px;
 }
-
+#hero-section p {
+  font-size: 14px;
+}
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--third-color);
 }
-
-#hero-section {
-  position: relative;
+.btn-outline-danger {
+  --bs-btn-color: var(--first-color);
+  --bs-btn-border-color: var(--first-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--first-color);
+  --bs-btn-hover-border-color: var(--first-color);
+}
+.btn {
+  --bs-btn-bg: #ff652325;
+  --bs-btn-border-width: 0px;
+  --bs-btn-border-radius: 2px;
 }
 
 /* What you will learn */
@@ -689,21 +698,24 @@
   --bs-accordion-border-color: none;
 }
 #course-content .accordion-body {
-  color: var(--fourth-color);
+  background-color: #f1f5f9;
   font-family: "OpenSans-light";
 }
 #course-content .accordion-button {
   border: 1px solid var(--first-color);
+  /* border: 1px solid var(--second-color); */
 }
 #course-content .accordion-button:not(.collapse) {
-  background-color: none;
+  background-color: #f1f5f9;
 }
 #course-content .accordion-button:focus {
   border: 1px solid var(--first-color);
+  /* border: 1px solid var(--second-color); */
   box-shadow: none;
 }
 #course-content .accordion-button:not(.collapsed) {
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
+  color: var(--second-color);
 }
 #course-content .accordion-button::after {
   content: "";
@@ -739,7 +751,8 @@
   border-radius: 50%;
   object-fit: cover;
 }
-#review i {
+#review i,
+#hero-section i {
   color: var(--first-color);
 }
 #review .like,
@@ -756,12 +769,11 @@
 
 /* *************** CARD ******************* */
 #cards {
-  width: 340px;
   box-shadow: 2px 2px 6px var(--fourth-color);
-  position: absolute;
-  top: 22.5rem;
-  right: 4.7rem;
   background-color: var(--third-color);
+  /* max-width: 400px;
+  margin: auto; */
+  position: relative;
 }
 #cards .btn {
   width: 100%;
@@ -773,7 +785,6 @@
 #cards .btn:hover {
   background-color: #9e9fa04f;
 }
-
 #cards .add-to-card-btn {
   color: var(--third-color);
   background-color: var(--first-color);
@@ -789,56 +800,4 @@
 }
 #cards .same-font {
   font-size: 14px;
-}
-.video {
-  width: 340px;
-  position: absolute;
-  top: 8rem;
-  right: 4.7rem;
-}
-.yt {
-  display: none;
-  height: 340px;
-}
-.card-hidd {
-  display: none;
-}
-/* Responsive */
-@media (max-width: 1176px) {
-  #cards {
-    display: none;
-  }
-  .video {
-    display: none;
-  }
-  .yt {
-    display: block;
-    width: 100%;
-  }
-  .hero-center {
-    margin: auto;
-  }
-  .card-hidd {
-    display: block;
-  }
-  .card-hidd .btn {
-    width: 100%;
-    background-color: white;
-    margin: 5px 0;
-    padding: 10px 0;
-    border-radius: 0;
-  }
-  .card-hidd .add-to-card-btn {
-    color: var(--third-color);
-    background-color: var(--first-color);
-  }
-  .card-hidd .add-to-card-btn:hover {
-    background-color: #df4300;
-  }
-  .card-hidd p {
-    font-size: 13px;
-  }
-  .lin {
-    margin: 0 auto;
-  }
 }

@@ -36,35 +36,27 @@ const seeLess = () => {
     btn3.innerHTML = `See more <i class="bi bi-chevron-down"></i>`;
   }
 };
+
 const see = () => {
   let dots4 = document.getElementById("dots4");
   let invi4 = document.getElementById("invisible-text4");
   let btn4 = document.getElementById("button4");
-  let opaci = document.getElementById("instructor-text");
-  console.log(opaci);
   if (dots4.style.display != "none") {
     dots4.style.display = "none";
     invi4.style.display = "inline";
-    opaci.style.opacity = "1";
     btn4.innerHTML = `See less <i class="bi bi-chevron-up"></i>`;
   } else {
     dots4.style.display = "inline";
     invi4.style.display = "none";
-    opaci.style.opacity = "0.2";
     btn4.innerHTML = `See more <i class="bi bi-chevron-down"></i>`;
   }
 };
 
-window.onscroll = () => {
-  let card = document.getElementById("cards");
-  if (pageYOffset > 423) {
-    card.style.cssText = `position: fixed; top: 2rem; right: 4.7rem;`;
-  } else {
-    card.style.cssText = `position: absolute; top: 22.5rem; right: 4.7rem;`;
-  }
-
-  
-
-
-  
-};
+// window.onscroll = () => {
+//   let card = document.getElementById("cards");
+//   if (pageYOffset > 140) {
+//     card.style.cssText = `position: fixed; top: 1.5rem; right: 5.5rem; max-width:340px`;
+//   } else {
+//     card.style.cssText = `position: relative; `;
+//   }
+// };
