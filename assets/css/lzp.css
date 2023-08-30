@@ -68,6 +68,22 @@
   background-image: none;
 }
 */
+#why-choose-us .accordion-button::after {
+  width: 0;
+  height: 0;
+  content: "";
+  background-image: none;
+}
+#why-choose-us .accordion-button::before {
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-right: 1rem;
+  content: "";
+  background-image: url(../images/mark.png);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
 #why-choose-us .images {
   max-height: 400px;
   object-fit: contain;
@@ -501,24 +517,21 @@
   }
 }
 
-/* Courses  section  */
+/********************************* Courses  section  **************************/
 #courses .course-outline-button {
   background-color: rgba(246, 82, 11, 0.1);
   box-shadow: 0px 2px 1px var(--first-color);
 }
-
 #courses .card-text {
   font-family: "OpenSans-light";
   font-weight: bold;
   font-size: 12px;
 }
-
 #courses .courses-enroll-button {
   background-color: rgba(246, 82, 11, 0.1);
   box-shadow: 0px 2px 1px var(--first-color);
   font-size: 20px;
 }
-
 .cap-text {
   width: 120px;
   height: 80px;
@@ -577,14 +590,15 @@
 #courses-page .courses-cards:hover .courses-image2,
 #courses-page .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
-  opacity: 0.8;
 }
 #courses-page .courses .card {
   transition: 0.3s;
 }
 #courses-page .courses .card:hover {
-  background-color: rgb(57, 57, 57);
+  background-color: #912b00ce;
+  opacity: 0.9;
 }
+
 #courses-page .top-courses .card:hover {
   opacity: 0.8;
 }
