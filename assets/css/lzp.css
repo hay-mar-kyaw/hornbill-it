@@ -127,9 +127,11 @@
 #why-choose-us .accordion-body {
   color: var(--fourth-color);
   font-family: "OpenSans-light";
+  background-color: #f1f5f9;
 }
 #why-choose-us .accordion-button {
   border: 1px solid var(--first-color);
+  background-color: #f1f5f9;
 }
 #why-choose-us .accordion-button:not(.collapse) {
   background-color: none;
@@ -139,7 +141,7 @@
   box-shadow: none;
 }
 #why-choose-us .accordion-button:not(.collapsed) {
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
 }
 #why-choose-us .accordion-button::after {
   content: "";
@@ -216,19 +218,20 @@
 #quick-answer .accordion-body {
   color: var(--fourth-color);
   font-family: "OpenSans-light";
+  background-color: #f1f5f9;
 }
 #quick-answer .accordion-button {
   border: 1px solid var(--first-color);
 }
 #quick-answer .accordion-button:not(.collapse) {
-  background-color: none;
+  background-color: #f1f5f9;
 }
 #quick-answer .accordion-button:focus {
   border: 1px solid var(--first-color);
   box-shadow: none;
 }
 #quick-answer .accordion-button:not(.collapsed) {
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
 }
 #quick-answer .accordion-button::after {
   content: "";
@@ -236,17 +239,14 @@
 }
 
 /*************************** Testimonial Section ***************************/
-#testimonial .carousel-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 #testimonial .carousel-item {
   position: relative;
 }
 #testimonial .card {
-  max-width: 500px;
+  max-width: 480px;
   margin: auto;
+  background-color: #f1f5f9;
 }
 #testimonial .client-msg {
   background-color: var(--third-color);
@@ -314,6 +314,10 @@
   transform: skewY(-35deg);
   background-color: var(--first-color);
 }
+#testimonial .swiper-button-next,
+#testimonial .swiper-button-prev {
+  color: var(--first-color);
+}
 
 /*************************** Contact Section ***************************/
 #contact .sub-title {
@@ -340,7 +344,7 @@
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - 12px);
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
   transition: 0.5s ease-in-out 0.5s;
   transform: scaleY(1);
 }
@@ -354,7 +358,7 @@
   top: -2px;
   width: calc(100% - 12px);
   height: calc(100% + 4px);
-  background-color: var(--third-color);
+  background-color: #f1f5f9;
   transition: 0.5s ease-in-out;
   transform: scaleX(1);
 }
@@ -373,12 +377,15 @@
   font-weight: 500;
   border-bottom: 1px solid var(--first-color);
 }
+.form-control {
+  background-color: #f1f5f9;
+}
 .form-control::placeholder {
-  color: var(--fourth-color);
   opacity: 0.6;
 }
 #contact form input:focus {
   box-shadow: none;
+  background-color: #f1f5f9;
 }
 #contact .btn-danger {
   color: var(--third-color);
@@ -800,4 +807,11 @@
 }
 #cards .same-font {
   font-size: 14px;
+}
+
+@media (max-width: 998px) {
+  #testimonial .swiper-button-next,
+  #testimonial .swiper-button-prev {
+    color: #fff;
+  }
 }

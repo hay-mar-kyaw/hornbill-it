@@ -60,3 +60,33 @@ const see = () => {
 //     card.style.cssText = `position: relative; `;
 //   }
 // };
+
+// SWIPER
+
+let appendNumber = 5;
+let prependNumber = 1;
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+  },
+});
