@@ -1,7 +1,5 @@
 /* Custom Utilities */
-.bgColor{
-    background: linear-gradient(to left,var(--first-color),var(--fourth-color)); 
-}
+
 .header{
     font-family: "Lora-Bold";
 }
@@ -20,88 +18,65 @@
 
 /* Navbar section  */
 
-.navbar{
-    background-color: var(--third-color);
-}
-
-.navbar-brand{
-    position: relative;
-}
-#navbar .logo-name-div{
-    position: absolute;
-    top: 10px;
-    left: 140px;
-}
-#navbar .logo-text1{
+.navbar .logo-text1{
+  font-size: 18px;
   letter-spacing: 6px;
 }
 
-#navbar .logo-text2{
-  font-size: 12px;
+.navbar .logo-text2{
+  font-size: 11px;
 }
 
-/* Hero Section  */
-#header .header-wrapper{
-    height: 85vh;
-    position: relative;
-    background-color: #f1f5f9;
+/* *********************Announcement bar ********************** */
+.announce-div{
+  height: 30px;
+  width: 100%;
+  background-color: var(--fifth-color);
 }
-#header .image-bg{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: var(--first-color);
+.announce-text{
+  font-size: 0.8rem;
+  background-color: var(--fifth-color);
+  
 }
 
-/* Hero  Button Section  */
-#header .button {
-    padding: 10px;
-    border-radius: 1px;
-    border: 2px solid var(--first-color);
-    color: var(--first-color);
-    text-decoration: none;
-    position: relative;
-  }
-  #header .button::before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% - 12px);
-    background-color: var(--third-color);
-    transition: 0.5s ease-in-out 0.5s;
-    transform: scaleY(1);
-  }
-  #header .button:hover::before {
-    transform: scaleY(0);
-    /* color: var(--third-color); */
-  }
-  #header .button::after {
-    content: "";
-    position: absolute;
-    left: 6px;
-    top: -2px;
-    width: calc(100% - 12px);
-    height: calc(100% + 4px);
-    background-color: var(--third-color);
-    transition: 0.5s ease-in-out;
-    transform: scaleX(1);
-  }
-  #header .button:hover::after {
-    transform: scaleX(0);
-  }
-  #header .button span{
-    position: relative;
-    z-index: 3;
-  }
-/* End Hero Button Section  */
-
-/* Wave section  */
-.waves{
- position: relative;
- top: 0px;
+/* **********************Hero Section **************************** */
+#header{
+  min-height: 600px;
 }
+
+#header .header-image1{
+  height: 200px;
+  width: 200px;
+  border-radius: 100% 0% 0% 100%;
+  background-color:#3B5998;
+ 
+  
+}
+#header .header-image2{
+  height: 200px;
+  width: 200px;
+  background-color:#ec5168;
+  
+}
+#header .header-image3{
+  height: 200px;
+  width: 200px;
+  background-color:#d5b605;
+  
+}
+#header .header-image4{
+  height: 200px;
+  width: 200px;
+  border-radius: 0% 100% 100% 0%;
+  background-color:#babec5;
+  
+}
+
+
+
+
+
+
 
  /* Header Icons  */
 #courses-icons{
