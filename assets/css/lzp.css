@@ -68,6 +68,22 @@
   background-image: none;
 }
 */
+#why-choose-us .accordion-button::after {
+  width: 0;
+  height: 0;
+  content: "";
+  background-image: none;
+}
+#why-choose-us .accordion-button::before {
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-right: 1rem;
+  content: "";
+  background-image: url(../images/mark.png);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
 #why-choose-us .images {
   max-height: 400px;
   object-fit: contain;
@@ -79,12 +95,13 @@
 }
 #why-choose-us .back-img::before {
   content: "";
-  width: 67%;
+  /* width: 67%; */
+  width: 70%;
   height: 90%;
   background: url(../images/bg.png);
   position: absolute;
   bottom: 0px;
-  left: 110px;
+  left: 90px;
   overflow: hidden;
   z-index: -1;
 }
@@ -112,7 +129,7 @@
 #why-choose-us .line {
   position: absolute;
   top: 4rem;
-  left: 7rem;
+  left: 5.6rem;
   z-index: -1;
 }
 #why-choose-us .square {
@@ -248,6 +265,9 @@
   margin: auto;
   background-color: #f1f5f9;
 }
+#testimonial p {
+  font-family: "OpenSans-light";
+}
 #testimonial .client-msg {
   background-color: var(--third-color);
   border-radius: 7px;
@@ -330,42 +350,18 @@
   margin: 5px;
 }
 #contact .button {
-  padding: 10px;
-  border-radius: 1px;
-  border: 2px solid var(--first-color);
-  color: var(--first-color);
+  padding: 15px;
+  border-radius: 6px;
+  color: #fff;
+  background-image: linear-gradient(to left, #ffc312, #ee5a24, #ffc312);
   text-decoration: none;
+  background-size: 200%;
+  transition: 0.6s;
   position: relative;
 }
-#contact .button::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background-color: #f1f5f9;
-  transition: 0.5s ease-in-out 0.5s;
-  transform: scaleY(1);
+#contact .button:hover {
+  background-position: right;
 }
-#contact .button:hover::before {
-  transform: scaleY(0);
-}
-#contact .button::after {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: -2px;
-  width: calc(100% - 12px);
-  height: calc(100% + 4px);
-  background-color: #f1f5f9;
-  transition: 0.5s ease-in-out;
-  transform: scaleX(1);
-}
-#contact .button:hover::after {
-  transform: scaleX(0);
-}
-
 #contact .button span {
   position: relative;
   z-index: 3;
@@ -376,6 +372,7 @@
   padding-left: 0;
   font-weight: 500;
   border-bottom: 1px solid var(--first-color);
+  font-family: "OpenSans-light";
 }
 .form-control {
   background-color: #f1f5f9;
@@ -501,24 +498,79 @@
   }
 }
 
-/* Courses  section  */
+/* =============================== Courses Card In Main=================================== */
+/* Courses Section  */
+
+#course .courses-cards {
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgb(205, 205, 205);
+  overflow: hidden;
+  transition: 0.4s;
+}
+#course .card:hover {
+  /* opacity: 0.8; */
+  background: rgba(0, 0, 0, 0.03);
+}
+#course .courses-image-wrapper {
+  position: relative;
+}
+#course .starr {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#course .courses-title {
+  background-color: var(--first-color);
+  color: white;
+}
+#course .courses-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+#course img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+}
+#course .fon {
+  font-family: "OpenSans-light";
+}
+#course span,
+#course i {
+  color: var(--first-color);
+  font-family: "OpenSans-light";
+}
+#course .starr i {
+  color: goldenrod;
+  font-size: 13px;
+}
+#course .card-text,
+#course .wrapper {
+  font-size: 14px;
+  font-family: "OpenSans-light";
+}
+#course .courses-cards:hover .courses-image1,
+#course .courses-cards:hover .courses-image2,
+#course .courses-cards:hover .courses-image3 {
+  transform: scale(1.2);
+}
+
+/********************************* Courses  section  **************************/
 #courses .course-outline-button {
   background-color: rgba(246, 82, 11, 0.1);
   box-shadow: 0px 2px 1px var(--first-color);
 }
-
 #courses .card-text {
   font-family: "OpenSans-light";
   font-weight: bold;
   font-size: 12px;
 }
-
 #courses .courses-enroll-button {
   background-color: rgba(246, 82, 11, 0.1);
   box-shadow: 0px 2px 1px var(--first-color);
   font-size: 20px;
 }
-
 .cap-text {
   width: 120px;
   height: 80px;
@@ -537,7 +589,7 @@
 
 /* Courses Sections  */
 
-#courses-page .courses-cards {
+/* #courses-page .courses-cards {
   background-color: var(--first-color);
   position: relative;
   overflow: hidden;
@@ -577,24 +629,78 @@
 #courses-page .courses-cards:hover .courses-image2,
 #courses-page .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
-  opacity: 0.8;
 }
 #courses-page .courses .card {
   transition: 0.3s;
 }
 #courses-page .courses .card:hover {
-  background-color: rgb(57, 57, 57);
+  background-color: #912b00ce;
+  opacity: 0.9;
 }
+
 #courses-page .top-courses .card:hover {
   opacity: 0.8;
 }
+*/
 #courses-page .category_link a {
   transition: 0.4s;
 }
 #courses-page .category_link:hover a {
   padding: 0 5px;
   background-color: #f1490773;
-  border-radius: 1px;
+  border-radius: 4px;
+}
+
+#courses-page .courses-cards {
+  background-color: #fff;
+  box-shadow: 2px 2px 6px rgb(205, 205, 205);
+  overflow: hidden;
+}
+#courses-page .card:hover {
+  opacity: 0.8;
+}
+#courses-page .courses-image-wrapper {
+  position: relative;
+}
+#courses-page .starr {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+#courses-page .courses-title {
+  background-color: var(--first-color);
+  color: white;
+}
+#courses-page .courses-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+#courses-page img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+}
+#courses-page span,
+#courses-page i {
+  color: var(--first-color);
+  font-family: "OpenSans-light";
+}
+#courses-page .starr i {
+  color: goldenrod;
+  font-size: 13px;
+}
+#courses-page .fon {
+  font-family: "OpenSans-light";
+}
+#courses-page .card-text,
+#courses-page .wrapper {
+  font-size: 14px;
+  font-family: "OpenSans-light";
+}
+#courses-page .courses-cards:hover .courses-image1,
+#courses-page .courses-cards:hover .courses-image2,
+#courses-page .courses-cards:hover .courses-image3 {
+  transform: scale(1.2);
 }
 
 /************************* Navbar Effect ***************************/
