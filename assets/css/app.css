@@ -23,14 +23,14 @@
     --first-color:#f6520b;
     --second-color:#000000;
     --third-color:#ffffff;
-    --fourth-color:#ced4da;
+    --fourth-color:#f1f5f9;
     --fifth-color:#ffc107;
     
 }
 
 
 body{
-    background-color: #f1f5f9;
+    background-color: #fff;
     /* background: linear-gradient(to left,var(--first-color),var(--second-color)); */
     /* overflow-x: hidden; */
 }

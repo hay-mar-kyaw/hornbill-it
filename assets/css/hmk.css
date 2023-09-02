@@ -28,66 +28,99 @@
 }
 
 /* *********************Announcement bar ********************** */
-.announce-div{
-  height: 30px;
-  width: 100%;
+#announcement-bar{
   background-color: var(--fifth-color);
 }
-.announce-text{
+#announcement-bar .container{
   font-size: 0.8rem;
-  background-color: var(--fifth-color);
+  
   
 }
 
 /* **********************Hero Section **************************** */
 #header{
-  min-height: 600px;
+  min-height:87vh;
+  background-color: var(--fourth-color);
+  
+}
+#header .wrapper {
+  /* position: relative; */
+  /* z-index: 2; */
+}
+
+#header .image-wrapper2 {
+  /* border: 2px solid red; */
+  /* width:100%; */
+}
+
+
+#header .image-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  
+ 
+}
+
+#header .image-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+#header .shape1{
+  position: relative;
+  z-index:1;
+}
+
+#header .shape1::before{
+  content: '';
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: aqua;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: 2;
 }
 
 #header .header-image1{
-  height: 200px;
-  width: 200px;
   border-radius: 100% 0% 0% 100%;
   background-color:#3B5998;
- 
-  
 }
+
 #header .header-image2{
-  height: 200px;
-  width: 200px;
   background-color:#ec5168;
   
 }
 #header .header-image3{
-  height: 200px;
-  width: 200px;
   background-color:#d5b605;
+  /* z-index: 1; */
   
 }
 #header .header-image4{
-  height: 200px;
-  width: 200px;
   border-radius: 0% 100% 100% 0%;
   background-color:#babec5;
   
 }
 
-
-
-
-
-
-
- /* Header Icons  */
-#courses-icons{
-  background-color: #f1f5f9;
+/* *******************Header Courses Icons ******************* */
+#header-course-icons{
+  background-color: #0d6efd;
+  /* min-height: 100px; */
+  
 }
- #courses-icons .icons{
-    color:var(--first-color);
-    
+#header-course-icons .container{
+  width: 100%;
+  height: auto;
 }
 
-/* About Section  */
+
+
+
+/*********************** About Section ************************ */
 
 #about .about-header{
     font-size: 3rem;
@@ -97,143 +130,65 @@
     font-size: 3rem;
     text-align: center;
 }
-/* About Right Side */
-/* #about .images {
-  max-height: 400px;
-  object-fit: contain;
-  z-index: 3;
-}
-#about .back-img {
+
+
+
+/* *************************Founder Section ************************* */
+#founder .container{
   position: relative;
-  z-index: 1;
 }
-
-#about .back-img::before {
-  content: "";
-  width: 67%;
-  height: 90%;
-  background: url(../images/bg.png);
+#founder .green-circle-shape1{
   position: absolute;
+  left: 50px;
+  bottom:30px;
+}
+#founder .yellow-cirlce-shape1{
+  position: absolute;
+  left: 20px;
   bottom: 0px;
-  left: 110px;
-  overflow: hidden;
-  z-index: -1;
 }
-#about .shape {
+#founder .yellow-cirlce-shape2{
   position: absolute;
-  width: 50%;
-  left: 8rem;
-  top: 30px;
-  z-index: -1;
+  top: 150px;
+  left: 50px;
 }
-#about .shape1 {
+#founder .triangle-shape1{
   position: absolute;
-  width: 50%;
-  left: 11rem;
-  top: 9rem;
-  z-index: -1;
-}
-#about .shape2 {
-  position: absolute;
-  width: 50%;
-  left: 12rem;
-  top: 15em;
-  z-index: -1;
-}
-#about .line {
-  width: 50%;
-  left: -1.2rem;
-  top: 4rem;
-  z-index: -1;
-}
-#about .square {
-  position: absolute;
-  bottom: 0;
-} */
-
-/* Courses Section  */
-
-#courses .courses-cards{
-    background-color: var(--first-color);
-    position: relative;
-    height: 25rem ;
-    overflow: hidden;
-    
-    
-}
-#courses .card:hover{
-  opacity: 0.8;
-}
-#courses .courses-title{
-    
-    background-color: var(--first-color);
-    color: white;
-    position: absolute;
-    top:10px;
-    right: 10px;
-    
-}
-#courses .courses-image-wrapper{
-  width: 100%;
-  height: 17rem;
-  overflow: hidden;
-}
-#courses img{
-    width: 100%;
-    object-fit: cover;
-    transition: 0.7s;
-}
-#courses .card-body h5{
-  font-family: "OpenSans-bold";
-  font-weight: 100px;
-}
-#courses .card-text{
-    font-weight: bold;
-    font-family: "OpenSans-light";
-    font-size: 12px;
-}
-#courses .fee{
-  font-family: 'OpenSans-light';
-  font-weight: bold;
-  font-size: 15px;
-}
-#courses .courses-cards:hover .courses-image1,
-#courses .courses-cards:hover .courses-image2,
-#courses .courses-cards:hover .courses-image3{
-    transform: scale(1.2);
+  right: 50px;
+  bottom:30px;
+ 
 }
 
-/* Who is founder Section  */
-/* .founder-wrapper{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    position: relative;
-}
-.founder-imgbox{
-  background: url(../images/founder.jpg);
-  background-size: cover;
-  background-position: center center;
-  width: 300px;
-  height: 300px;
-  animation: animate 5s ease-in-out infinite;
-  transition: all 1s;
-  
+
+#founder .green-circle-shape2{
+  position: absolute;
+  top: 100px;
+  right: 30px;
 
 }
-@keyframes animate{
-  0%{
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50%{
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100%{
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-} */
+#founder .blue-rectangle-shape1{
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  z-index: -1;
+}
+
+#founder .yellow-rectangle-shape1{
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+}
+
+#founder .founder-text-wrapper{
+  position: relative;
+}
+#founder .quote-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
 
 
 #founder .social-icons{
@@ -275,13 +230,7 @@
 }
 
 
-/* Media Query */
-/* @media (max-width:600px)
-{
-  #header .wave-container{
-    height:100vh ;
-}
-} */
+
 
 
 
