@@ -86,7 +86,8 @@ const swiper = new Swiper(".swiper", {
     },
     1024: {
       slidesPerView: 2,
-      spaceBetween: 0,
+      // spaceBetween: -51,
+      spaceBetween: 10,
     },
   },
 });
