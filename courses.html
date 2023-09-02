@@ -14,6 +14,7 @@
     />
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/hmk.css" />
     <link rel="stylesheet" href="assets/css/lzp.css" />
     <!-- Fontawesome  -->
     <link
@@ -23,7 +24,7 @@
   </head>
   <body>
     <!-- Navbar Section  -->
-    <nav id="navbar" class="navbar navbar-expand-lg shadow-sm">
+    <!-- <nav id="navbar" class="navbar navbar-expand-lg shadow-sm">
       <div class="container d-flex">
         <a class="navbar-brand d-lg-flex w-25" href="index.html">
           <img
@@ -75,7 +76,78 @@
           </ul>
         </div>
       </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand d-lg-flex" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            class="img-fluid me-1"
+            style="width: 5rem; object-fit: contain"
+            alt=""
+          />
+          <div class="brand-text d-flex flex-column">
+            <span class="logo-text1">HORNBILL</span>
+            <span class="logo-text2">Information Technology</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-1">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item mx-1">
+              <a
+                href="#singinOffcanvas"
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                >Sing In</a
+              >
+            </li>
+            <li class="nav-item mx-1">
+              <a
+                href="#registerOffcanvas"
+                class="nav-link"
+                data-bs-toggle="offcanvas"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <!-- Announcement bar  -->
+    <section id="announcement-bar">
+      <div class="container d-flex justify-content-between py-1">
+        <span>09403438913</span>
+        <span>info.hit@gmail.com</span>
+      </div>
+    </section>
 
     <!-- Courses Detail Section  -->
     <section id="courses-page" class="py-5">
@@ -86,7 +158,7 @@
               <div class="col-lg-4 col-md-6">
                 <a
                   href="courses-detail.html"
-                  class="card border-0 rounded-3 courses-cards text-decoration-none"
+                  class="card border-0 rounded-3 courses-cards shadow-sm text-decoration-none"
                 >
                   <div class="courses-image-wrapper">
                     <img
@@ -101,13 +173,13 @@
                       >
                         $90.00
                       </div>
-                      <div class="ps-3">
+                      <!-- <div class="ps-3">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
@@ -134,7 +206,7 @@
               <div class="col-lg-4 col-md-6">
                 <a
                   href="courses-detail.html"
-                  class="card border-0 rounded-3 courses-cards text-decoration-none"
+                  class="card border-0 rounded-3 courses-cards shadow-sm text-decoration-none"
                 >
                   <div class="courses-image-wrapper">
                     <img
@@ -149,13 +221,13 @@
                       >
                         $90.00
                       </div>
-                      <div class="ps-3">
+                      <!-- <div class="ps-3">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
@@ -182,7 +254,7 @@
               <div class="col-lg-4 col-md-6">
                 <a
                   href="courses-detail.html"
-                  class="card border-0 rounded-3 courses-cards text-decoration-none"
+                  class="card border-0 rounded-3 courses-cards shadow-sm text-decoration-none"
                 >
                   <div class="courses-image-wrapper">
                     <img
@@ -197,13 +269,13 @@
                       >
                         $90.00
                       </div>
-                      <div class="ps-3">
+                      <!-- <div class="ps-3">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
@@ -230,7 +302,7 @@
               <div class="col-lg-4 col-md-6">
                 <a
                   href="courses-detail.html"
-                  class="card border-0 rounded-3 courses-cards text-decoration-none"
+                  class="card border-0 rounded-3 courses-cards shadow-sm text-decoration-none"
                 >
                   <div class="courses-image-wrapper">
                     <img
@@ -245,13 +317,13 @@
                       >
                         $90.00
                       </div>
-                      <div class="ps-3">
+                      <!-- <div class="ps-3">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
@@ -278,7 +350,7 @@
               <div class="col-lg-4 col-md-6">
                 <a
                   href="courses-detail.html"
-                  class="card border-0 rounded-3 courses-cards text-decoration-none"
+                  class="card border-0 rounded-3 courses-cards shadow-sm text-decoration-none"
                 >
                   <div class="courses-image-wrapper">
                     <img
@@ -293,13 +365,13 @@
                       >
                         $90.00
                       </div>
-                      <div class="ps-3">
+                      <!-- <div class="ps-3">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
@@ -326,7 +398,7 @@
               <div class="col-lg-4 col-md-6">
                 <a
                   href="courses-detail.html"
-                  class="card border-0 rounded-3 courses-cards text-decoration-none"
+                  class="card border-0 rounded-3 courses-cards shadow-sm text-decoration-none"
                 >
                   <div class="courses-image-wrapper">
                     <img
@@ -341,13 +413,13 @@
                       >
                         $90.00
                       </div>
-                      <div class="ps-3">
+                      <!-- <div class="ps-3">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-half"></i>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 
