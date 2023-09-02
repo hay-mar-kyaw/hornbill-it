@@ -1,73 +1,9 @@
 /* Custom Utilities  */
-
-.icons,
-.icons,
-.icons {
-  width: 70px;
-  position: relative;
-}
-
-.arrow-line,
-.arrow-line,
-.arrow-line {
-  width: 60px;
-  height: 2px;
-  background-color: var(--first-color);
-  position: absolute;
-  top: 3px;
-}
-.arrow-icon,
-.arrow-icon,
-.arrow-icon {
-  width: 5.5px;
-  height: 5.5px;
-  background-color: var(--first-color);
-  transform: rotate(50deg);
-  position: absolute;
-  top: 1.5px;
-  left: 60px;
+h6 {
+  color: var(--first-color);
 }
 
 /************************** WHY CHOOSE US **************************/
-/* #why-choose-us .accordion-item {
-  border: 1px solid var(--first-color);
-}
-#why-choose-us .accordion-button:not(.collapsed) {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-#why-choose-us .accordion-item:first-of-type .accordion-button {
-  border-radius: 0;
-}
-#why-choose-us .accordion-body {
-  max-height: 0;
-  overflow: hidden;
-  color: var(--fourth-color);
-  transition: 0.4s;
-  padding: 0 0 0 40px;
-  font-family: 'OpenSans-light';
-}
-#why-choose-us .accordion-item:hover .accordion-body {
-  max-height: 600px;
-  padding: 0 0 15px 40px;
-}
-#why-choose-us .accordion-button {
-  cursor: pointer;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-#why-choose-us .accordion-button i {
-  margin-right: 10px;
-  font-size: 1.3rem;
-  color: var(--first-color);
-}
-#why-choose-us .accordion-button:not(.collapsed)::after {
-  content: "";
-  background-image: none;
-}
-*/
 #why-choose-us .accordion-button::after {
   width: 0;
   height: 0;
@@ -257,9 +193,6 @@
 
 /*************************** Testimonial Section ***************************/
 
-#testimonial .carousel-item {
-  position: relative;
-}
 #testimonial .card {
   max-width: 480px;
   margin: auto;
@@ -269,18 +202,17 @@
   font-family: "OpenSans-light";
 }
 #testimonial .client-msg {
-  background-color: var(--third-color);
   border-radius: 7px;
   text-align: left;
   position: relative;
-  background-color: var(--first-color);
+  background-color: #6366f1;
 }
 #testimonial .client-data img {
   width: 5rem;
   height: 5rem;
   border-radius: 50px;
   object-fit: cover;
-  border: 5px solid var(--third-color);
+  border: 5px solid #f1f5f9;
   position: relative;
   bottom: 10px;
   left: 0px;
@@ -330,13 +262,47 @@
   height: 40px;
   border-radius: 8px;
   left: 8rem;
-  bottom: -8px;
+  bottom: -10px;
   transform: skewY(-35deg);
-  background-color: var(--first-color);
+  background-color: #6366f1;
 }
 #testimonial .swiper-button-next,
 #testimonial .swiper-button-prev {
-  color: var(--first-color);
+  color: #00000080;
+  position: absolute;
+  top: 45%;
+}
+#testimonial .swiper-pagination {
+  color: #00000080;
+}
+.swiper {
+  width: 90%;
+}
+#testimonial .swiper-container {
+  position: relative;
+}
+.button-box {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.button-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 0;
+}
+.swiper-button-next {
+  position: absolute;
+  right: 0;
 }
 
 /*************************** Contact Section ***************************/
@@ -915,9 +881,13 @@
   font-size: 14px;
 }
 
-@media (max-width: 998px) {
-  #testimonial .swiper-button-next,
-  #testimonial .swiper-button-prev {
-    color: #fff;
+/* @media (max-width: 992) {
+  .button-box {
+    position: absolute;
+    top: 0%;
+    left: 0%;
   }
-}
+  .swiper-button-prev {
+    left: 0;
+  }
+} */
