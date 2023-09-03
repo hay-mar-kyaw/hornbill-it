@@ -26,7 +26,17 @@
 .navbar .logo-text2{
   font-size: 11px;
 }
-
+.nav-item:hover .nav-link{
+  color: var(--sixth-color);
+}
+.registerBtn{
+  
+  background-color: var(--sixth-color);
+  color: white;
+}
+.registerBtn:hover{
+  columns: black;
+}
 /* *********************Announcement bar ********************** */
 #announcement-bar{
   background-color: var(--fifth-color);
@@ -45,7 +55,10 @@
   z-index: -2;
 }
 
-
+#header .getStartBtn{
+  color: var(--second-color);
+  background-color: var(--fifth-color);
+}
 
 #header .image-wrapper {
   width: 30%;
@@ -59,8 +72,8 @@
 
 #header .image-wrapper img{
   width: 100%;
-  /* height: 100%; */
-  /* object-fit: cover; */
+  height: 100%;
+  object-fit: cover;
  
 }
 #header .shape1{
@@ -73,7 +86,7 @@
   width: 50%;
   height: 45%;
   border-radius: 50%;
-  background-color: rgba(3, 240, 240,0.5);
+  background-color: #C2F6FF;
   position: absolute;
   bottom: -20px;
   left: -30px;
@@ -89,7 +102,7 @@
   width: 80%;
   height: 70%;
   border-radius: 50%;
-  background-color: rgba(250, 205, 5,0.5);
+  background-color: #FFE79B;
   position: absolute;
   top:-50px;
   right: -50px;
@@ -101,7 +114,7 @@
   width: 30%;
   height: 25%;
   border-radius: 50%;
-  background-color: rgb(194, 194, 192,0.8);
+  background-color: #EAEAEA;
   position: absolute;
   top:120px;
   right: -75px;
@@ -112,27 +125,27 @@
 
 #header .header-image1{
   border-radius: 100% 0% 0% 100%;
-  background-color:#3B5998;
+  background-color:#B8DCFF;
 }
 
 #header .header-image2{
-  background-color:#ec5168;
+  background-color:#D98D8F;
   
 }
 #header .header-image3{
-  background-color:#d5b605;
+  background-color:#FFDB26;
   
   
 }
 #header .header-image4{
   border-radius: 0% 100% 100% 0%;
-  background-color:#babec5;
+  background-color:#E3E9EF;
   
 }
 
 /* *******************Header Courses Icons ******************* */
 #header-course-icons{
-  background-color: #0d6efd;
+  background-color: var(--sixth-color);
   /* min-height: 100px; */
   
 }
@@ -161,16 +174,25 @@
 #founder .container{
   position: relative;
 }
+
+#founder .plus-shape{
+  position: absolute;
+  top: 10%;
+  right: 30%;
+}
+
+#founder .line-shape{
+  position: absolute;
+  bottom: 140px;
+  left: 30px;
+  z-index: -1;
+}
 #founder .green-circle-shape1{
   position: absolute;
   left: 50px;
   bottom:30px;
 }
-#founder .yellow-cirlce-shape1{
-  position: absolute;
-  left: 20px;
-  bottom: 0px;
-}
+
 #founder .yellow-cirlce-shape2{
   position: absolute;
   top: 150px;
@@ -191,6 +213,10 @@
 
 }
 #founder .blue-rectangle-shape1{
+  width: 20px;
+  height: 20px;
+  border: 2px solid blue;
+  transform: rotate(30deg);
   position: absolute;
   right: 50px;
   bottom: 100px;
@@ -198,9 +224,13 @@
 }
 
 #founder .yellow-rectangle-shape1{
+  width: 20px;
+  height: 20px;
+  border: 2px solid  #ffc107;
+  transform: rotate(30deg);
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -5px;
 
 }
 
@@ -212,6 +242,11 @@
   top: 0;
   right: 0;
   z-index: -1;
+}
+#founder .yellow-cirlce-shape1{
+  position: absolute;
+  left: 5%;
+  bottom: -10%;
 }
 
 
