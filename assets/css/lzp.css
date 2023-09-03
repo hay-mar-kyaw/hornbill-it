@@ -321,7 +321,8 @@ h6 {
   padding: 15px;
   border-radius: 6px;
   color: #fff;
-  background-image: linear-gradient(to left, #ffc312, #ee5a24, #ffc312);
+  /* background-image: linear-gradient(to left, #6366f1, #c6c5c4c4, #6366f1); */
+  background: #6366f1;
   text-decoration: none;
   background-size: 200%;
   transition: 0.6s;
@@ -339,7 +340,7 @@ h6 {
   border-radius: 0;
   padding-left: 0;
   font-weight: 500;
-  border-bottom: 1px solid var(--first-color);
+  border-bottom: 1px solid #6366f1;
   font-family: "OpenSans-light";
 }
 .form-control {
@@ -350,26 +351,30 @@ h6 {
 }
 #contact form input:focus {
   box-shadow: none;
-  background-color: #f1f5f9;
+  background-color: #fff;
 }
 #contact .btn-danger {
   color: var(--third-color);
-  background-color: var(--first-color);
+  background-color: #6366f1;
 }
 #contact .btn-outline-danger {
-  color: var(--first-color);
-  border-color: var(--first-color);
+  --bs-btn-color: #6366f1;
+  --bs-btn-border-color: #6366f1;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6366f1;
+  --bs-btn-hover-border-color: #6366f1;
+  background-color: #6365f127;
 }
 #contact .btn-outline-danger:hover {
   color: var(--third-color);
-  background-color: var(--first-color);
+  background-color: #6366f1;
 }
 #contact .btn-danger:hover {
   color: var(--third-color);
-  background-color: #f14a07;
+  background-color: #6365f1db;
 }
 #contact .address i {
-  color: var(--first-color);
+  color: #6366f1;
 }
 #contact .address a {
   color: var(--second-color);
@@ -382,18 +387,18 @@ h6 {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
-  color: var(--fourth-color);
+  color: #00000080;
   transition: 0.5s;
 }
 #contact .socials a:hover {
   color: var(--third-color);
-  background-color: var(--first-color);
+  background-color: #6366f1;
 }
 
 /*************************** FOOTER SECTION ***************************/
 #footer {
-  background-color: var(--first-color);
-  color: var(--third-color);
+  background-color: #ffcf3a;
+  color: #000;
   margin-top: 90px;
   position: relative;
 }
@@ -407,8 +412,12 @@ h6 {
   font-size: 15px;
 }
 #footer li a {
-  color: var(--third-color);
+  color: #000;
   transition: 0.5s;
+  font-family: "Lora-light";
+}
+#footer .cop {
+  font-family: "Lora-light";
 }
 .footerwaves {
   position: relative;
