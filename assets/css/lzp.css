@@ -33,7 +33,7 @@ h4 {
   content: "";
   width: 70%;
   height: 90%;
-  background: url(../images/bg.png);
+  background: url(../images/back.png);
   position: absolute;
   bottom: 0px;
   left: 90px;
@@ -123,7 +123,7 @@ h4 {
   content: "";
   width: 67%;
   height: 90%;
-  background: url(../images/bg.png);
+  background: url(../images/back.png);
   position: absolute;
   bottom: 0px;
   left: 110px;
@@ -269,7 +269,8 @@ h4 {
 }
 #testimonial .swiper-button-next,
 #testimonial .swiper-button-prev {
-  color: #00000080;
+  color: #6366f1;
+  /* color: #00000080; */
   position: absolute;
   top: 45%;
 }
@@ -373,7 +374,7 @@ h4 {
   background-color: #6365f1db;
 }
 #contact .address i {
-  color: var(--first-color);
+  color: #6366f1;
 }
 #contact .address a {
   color: var(--second-color);
@@ -413,10 +414,16 @@ h4 {
 #footer li a {
   color: #000;
   transition: 0.5s;
-  font-family: "Lora-light";
+  font-family: "OpenSans-light";
+}
+#footer .footer-title {
+  font-family: "Lora-Bold";
 }
 #footer .cop {
-  font-family: "Lora-light";
+  font-family: "OpenSans-Bold";
+}
+#footer p {
+  font-family: "OpenSans-Bold";
 }
 .footerwaves {
   position: relative;
@@ -479,12 +486,10 @@ h4 {
 
 #course .courses-cards {
   background-color: #fff;
-  /* box-shadow: 2px 2px 6px rgb(205, 205, 205); */
   overflow: hidden;
   transition: 0.4s;
 }
 #course .card:hover {
-  /* opacity: 0.8; */
   background: rgba(0, 0, 0, 0.03);
 }
 #course .courses-image-wrapper {
@@ -497,7 +502,7 @@ h4 {
 }
 
 #course .courses-title {
-  background-color: var(--first-color);
+  background-color: var(--sixth-color);
   color: white;
 }
 #course .courses-image-wrapper {
@@ -514,7 +519,7 @@ h4 {
 }
 #course span,
 #course i {
-  color: var(--first-color);
+  color: var(--sixth-color);
   font-family: "OpenSans-light";
 }
 #course .starr i {
@@ -563,73 +568,17 @@ h4 {
   line-height: 30px;
 }
 
-/* Courses Sections  */
-
-/* #courses-page .courses-cards {
-  background-color: var(--first-color);
-  position: relative;
-  overflow: hidden;
-}
-#courses-page .courses-title {
-  background-color: var(--first-color);
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-#courses-page .courses-image-wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-#courses-page img {
-  width: 100%;
-  object-fit: cover;
-  transition: 0.7s;
-}
-
-#courses-page .card-body h5 {
-  font-family: "OpenSans-bold";
-  font-weight: 100px;
-}
-#courses-page .card-text {
-  font-weight: bold;
-  font-family: "OpenSans-light";
-  font-size: 12px;
-}
-#courses-page .fee {
-  font-family: "OpenSans-light";
-  font-weight: bold;
-  font-size: 15px;
-}
-#courses-page .courses-cards:hover .courses-image1,
-#courses-page .courses-cards:hover .courses-image2,
-#courses-page .courses-cards:hover .courses-image3 {
-  transform: scale(1.2);
-}
-#courses-page .courses .card {
-  transition: 0.3s;
-}
-#courses-page .courses .card:hover {
-  background-color: #912b00ce;
-  opacity: 0.9;
-}
-
-#courses-page .top-courses .card:hover {
-  opacity: 0.8;
-}
-*/
-#courses-page .category_link a {
+/* #courses-page .category_link a {
   transition: 0.4s;
 }
 #courses-page .category_link:hover a {
   padding: 0 5px;
   background-color: #f1490773;
   border-radius: 4px;
-}
+} */
 
 #courses-page .courses-cards {
   background-color: #fff;
-  /* box-shadow: 2px 2px 6px rgb(205, 205, 205); */
   overflow: hidden;
 }
 #courses-page .card:hover {
@@ -673,9 +622,9 @@ h4 {
   font-size: 14px;
   font-family: "OpenSans-light";
 }
-#courses-page .courses-cards:hover .courses-image1,
-#courses-page .courses-cards:hover .courses-image2,
-#courses-page .courses-cards:hover .courses-image3 {
+#course .courses-cards:hover .courses-image1,
+#course .courses-cards:hover .courses-image2,
+#course .courses-cards:hover .courses-image3 {
   transform: scale(1.2);
 }
 
@@ -791,13 +740,13 @@ h4 {
   font-family: "OpenSans-light";
 }
 #course-content .accordion-button {
-  border: 1px solid var(--first-color);
+  border: 1px solid var(--sixth-color);
 }
 #course-content .accordion-button:not(.collapse) {
   background-color: #fff;
 }
 #course-content .accordion-button:focus {
-  border: 1px solid var(--first-color);
+  border: 1px solid var(--sixth-color);
   box-shadow: none;
 }
 #course-content .accordion-button:not(.collapsed) {
