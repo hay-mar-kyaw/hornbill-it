@@ -34,7 +34,7 @@
   columns: black;
 }
 .registerBtn {
-  padding: 10px;
+  /* padding: 10px; */
   text-decoration: none;
 }
 /* *********************Announcement bar ********************** */
@@ -48,10 +48,28 @@
 /* **********************Hero Section **************************** */
 #header {
   min-height: 87vh;
-  background-color: var(--fourth-color);
+  /* background-color: var(--fourth-color); */
   position: relative;
-  z-index: -2;
+  /* z-index: -1; */
 }
+
+#header::before{
+  content:'';
+  width:100%;
+  min-height: 110vh;
+  background-color: var(--fourth-color);
+  position: absolute;
+  z-index: -1;
+}
+
+#header .container{
+  /* background-color: var(--fourth-color); */
+}
+
+#header .overlay{
+  /* z-index:-1; */
+}
+
 
 #header .getStartBtn {
   color: var(--second-color);
@@ -128,6 +146,57 @@
   border-radius: 0% 100% 100% 0%;
   background-color: #e3e9ef;
 }
+  /* Get Start button & Browse Courses button  */
+  #header .startBtn {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid ;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(99, 102, 241);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  
+  
+  #header .startBtn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  #header .startBtn:hover {
+    color: #fff;
+    border: 1px solid #6366f1;
+  }
+  
+  #header .startBtn:hover::before {
+    box-shadow: inset 0 0 0 10em #6366f1;
+  }
+
+   
+
 .cta {
   position: relative;
   margin: auto;
@@ -135,6 +204,7 @@
   transition: all 0.2s ease;
   border: none;
   background: none;
+  z-index: 100;
 }
 
 .cta:before {
@@ -144,7 +214,7 @@
   left: 0;
   display: block;
   border-radius: 50px;
-  background: #b1dae7;
+  background: rgb(255, 207, 58);
   width: 45px;
   height: 45px;
   transition: all 0.3s ease;
@@ -174,7 +244,7 @@
 
 .cta:hover:before {
   width: 100%;
-  background: #b1dae7;
+  background: rgb(255, 207, 58);
   z-index: -100;
 }
 
@@ -186,55 +256,7 @@
   transform: scale(0.95);
 }
 
-#header .startBtn {
-  background: transparent;
-  position: relative;
-  padding: 5px 15px;
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid rgb(40, 144, 241);
-  border-radius: 25px;
-  outline: none;
-  overflow: hidden;
-  color: rgb(40, 144, 241);
-  transition: color 0.3s 0.1s ease-out;
-  text-align: center;
-}
 
-button span {
-  /* margin: 10px; */
-}
-
-#header .startBtn::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: "";
-  border-radius: 50%;
-  display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
-  text-align: center;
-  transition: box-shadow 0.5s ease-out;
-  z-index: -1;
-}
-
-#header .startBtn:hover {
-  color: #fff;
-  border: 1px solid rgb(40, 144, 241);
-}
-
-#header .startBtn:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
-}
 
 /* *******************Header Courses Icons ******************* */
 #header-course-icons {
