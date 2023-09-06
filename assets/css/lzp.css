@@ -435,7 +435,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(../images/wave.jpg);
+  background: url(../images/wave0.jpg);
   background-size: 2000px 100px;
 }
 .footerwave#footerwave1 {
@@ -682,6 +682,9 @@ h4 {
 }
 #hero-section i {
   font-size: 12px;
+}
+#hero-section .star-wrapper i {
+  color: var(--fifth-color);
 }
 #hero-section p {
   font-size: 14px;
