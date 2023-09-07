@@ -100,7 +100,7 @@ body {
 /* Up Arrow Section  */
 .up-arrow {
   display: block;
-  background-color: var(--sixth-color);
+  background-color: var(--fifth-color);
   color: var(--third-color);
   width: 40px;
   height: 50px;

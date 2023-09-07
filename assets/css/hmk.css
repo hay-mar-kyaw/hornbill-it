@@ -25,18 +25,16 @@
 }
 .nav-item:hover .nav-link {
   color: var(--sixth-color);
+  font-weight: bold;
 }
 .registerBtn {
   background-color: var(--sixth-color);
   color: white;
-}
-.registerBtn:hover {
-  columns: black;
-}
-.registerBtn {
-  /* padding: 10px; */
   text-decoration: none;
+  
+  
 }
+
 /* *********************Announcement bar ********************** */
 #announcement-bar {
   background-color: var(--fifth-color);
@@ -200,11 +198,12 @@
 .cta {
   position: relative;
   margin: auto;
-  padding: 12px 18px;
+  padding: 10px 18px;
   transition: all 0.2s ease;
   border: none;
   background: none;
   z-index: 100;
+  
 }
 
 .cta:before {
@@ -215,8 +214,8 @@
   display: block;
   border-radius: 50px;
   background: rgb(255, 207, 58);
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   transition: all 0.3s ease;
 }
 
