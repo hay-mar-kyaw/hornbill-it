@@ -807,8 +807,11 @@
                 viewBox="0 0 500 500"
                 width="100%"
                 id="blobSvg"
-                style="opacity: 1"
+                stroke="#6366f1"          
+                stroke-width="20px"
+                style="opacity: 1;"
               >
+              
                 <image
                   x="0"
                   y="60"
@@ -817,7 +820,9 @@
                   clip-path="url(#shape)"
                   href="assets/images/founder.jpg?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
                   preserveAspectRatio="none"
-                ></image>
+                    
+                 
+                  ></image>
                 <defs>
                   <linearGradient
                     id="gradient"
@@ -825,6 +830,7 @@
                     y1="0%"
                     x2="0%"
                     y2="100%"
+                    
                   >
                     <stop
                       offset="0%"
@@ -837,8 +843,9 @@
                   </linearGradient>
                 </defs>
                 <clipPath id="shape">
-                  <path id="blob" fill="url(#gradient)">
+                  <path id="blob" fill="url(#gradient)" >
                     <animate
+                    
                       attributeName="d"
                       dur="10000ms"
                       repeatCount="indefinite"
