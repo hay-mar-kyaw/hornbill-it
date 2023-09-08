@@ -23,7 +23,7 @@
 .navbar .logo-text2 {
   font-size: 11px;
 }
-.nav-item:hover .nav-link {
+.nav-item:hover .nav-link:not(.registerBtn) {
   color: var(--sixth-color);
   font-weight: bold;
 }
@@ -42,8 +42,10 @@
   text-decoration: none;
   /* padding:10px 20px; */
   border-radius:20px;
-  
-  
+}
+.registerBtn:hover{
+  background-color: var(--sixth-color);
+  color: white;
 }
 
 /* *********************Announcement bar ********************** */
